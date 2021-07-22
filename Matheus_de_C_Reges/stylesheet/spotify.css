@@ -1,0 +1,264 @@
+* {
+    
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Spotify;
+    src: url(./CircularSpotifyTxT-Black.ttf);
+}
+
+header {
+    font-family: 'Spotify';
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+#header-box {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    flex-wrap: wrap;
+}
+#header-logo a img{
+    padding-top: 15px;
+}
+
+#navigation ul{
+    display: flex;
+    justify-content: center;
+}
+
+#header-nav nav li {
+    display: inline;
+    color: #FFFF;
+    padding: 28px 17px;
+}
+
+#header-nav nav a:hover {
+    color: #3dd65e !important;
+}
+
+#subscription {
+    color: #d9dadc !important;
+}
+
+#login {
+    color: #d9dadc !important;
+}
+#header-nav nav a {
+    color: #FFFF;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+banner {
+    font-family: 'Spotify';
+}
+
+#banner-box {
+    
+    justify-content: space-between;
+    background-color: #2941AB;
+    background-image: url('../images/banner.svg');
+    background-size: 184%;
+    background-position: 48% 2%; 
+    height: 900px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+   
+    
+}
+
+#banner-box li {
+    display: inline-block;
+    
+}
+
+#banner-title {
+    padding: 190px 90px 40px 90px;
+    font-size: 150px;
+    font-weight: 900;
+    color: #3dd65e;
+    letter-spacing: -10px;
+}
+
+#banner-subtitle {
+    padding: 30px 20px 20px 20px;
+    color: #3dd65e;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#banner-button {
+    padding: 10px;
+    border: 0px;
+    margin-top: 10px;
+    background-color: #3dd65e;
+    width: 220px;
+    height: 49px;
+    border-radius: 500px;
+    font-weight: 900;
+    color: #2941AB;
+    font-size: 13px;
+}
+
+#banner-button:hover{
+    width: 225px;
+    height: 52px;
+    font-size: 13.5px;
+    color: #2744c4;
+    background-color: #4ad868;
+}
+
+footer {
+    background-color: #000;
+    font-family: Roboto, sans-serif;
+}
+
+#footer-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 90px 100px 60px 100px;
+    justify-content: space-between;
+}
+
+#links-footer-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links-footer {
+    margin-right: 30px;
+}
+
+.links-footer ul li{
+    margin: 22px 0;
+    list-style: none;
+}
+
+.links-footer li a{
+    list-style: none;
+    font-size: 16px;
+}
+
+.link {
+    display: inline;
+    color: #FFFF;
+    
+    text-decoration: none;
+    list-style: none;
+}
+
+.link:hover{
+    color:#3dd65e; 
+}
+
+#region {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+#region li{
+    margin: 0;
+    text-align: right;
+}
+
+#region li a{
+    color: #919496;
+    text-decoration: none;
+    font-size: 12px;
+}
+#region li a:hover{
+    color: #3dd65e;
+}
+
+#links-bottom {
+    width: 100%;
+}
+
+#links-socials{
+    margin-top: 15px;
+}
+
+
+#links-socials ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#links-socials ul a{
+
+    padding: 15px;
+    background-color: #222326;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    margin-left: 15px;
+}
+
+#links-bottom a:hover{
+    color: #3dd65e;
+}
+    
+.links-section{
+    font-size: 12px;
+    color: #919496;
+}
+
+#links-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#links-bottom-left {
+    width: 45%;
+}
+
+#links-bottom-left ul{
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+}
+
+#links-bottom ul{
+    display: flex;
+    padding: 0px;
+}
+
+#links-bottom a{
+    
+    font-size: 11.5px;
+    text-decoration: none;
+    color: #919496;
+}
+
+#links-bottom li{
+    list-style: none;
+    font-size: 12px;
+    text-decoration: none;
+    color: #919496;
+}
+
+
+@media only screen and (min-width: 1500px) {
+    #header-box {
+        padding: 0px 300px 0px 300px;
+    }
+    #footer-box {
+        padding: 90px 300px 60px 300px;
+    }
+}
