@@ -12,7 +12,6 @@ body{
     color: #fff;
     letter-spacing: 1px;
     background: linear-gradient(-45deg,#8D0BD9 7%,#0562AD,#0CB5F7,#6ED10A,#F7E007,orange,red);
-    background-attachment: fixed;
 }
 
 header {
