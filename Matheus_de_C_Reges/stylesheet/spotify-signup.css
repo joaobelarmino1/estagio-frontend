@@ -59,10 +59,10 @@ body {
 }
 
 #button img:hover {
-    
+    box-shadow: 5px 2px 8px black;
     transform: scale(1.1);
     background-color: #1979f7;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 form {
@@ -98,6 +98,7 @@ form {
 
 .label-agree-box a:hover{
     color: rgb(49, 179, 95);
+    
 }
 
 #label2-box{
@@ -335,9 +336,18 @@ form {
 }
 
 @media only screen and (max-width: 330px) {
+    
     #main-box {
         box-sizing: border-box;
         max-width: 320px;
+    }
+
+    .line {
+        width: 120px;
+        height: 0.7px;
+        max-width: 60%;
+        background-color: rgb(127, 127, 127);
+    
     }
 }
 
