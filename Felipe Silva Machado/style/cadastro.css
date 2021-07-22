@@ -43,6 +43,7 @@ body {
     position:relative;
     transition: all .2s ease-in-out;
     box-shadow: 1px 5px 20px #ff179bc0;
+    opacity: 90%;
 }
 
 .fundoSignup:hover {
@@ -88,6 +89,13 @@ body {
 
 /* BOTAO FACEBOOK */
 
+.botaoFacebook svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
 .botaoFacebookContainer {
     display: flex;
     justify-content: space-around;
@@ -126,6 +134,10 @@ body {
 }
 
 #termosECondicoes{
+    color: #000;
+}
+
+#termosECondicoes:hover{
     color: #ff179bc0;
 }
 
@@ -139,6 +151,10 @@ body {
 }
 
 #politicaDePrivacidade {
+    color: #000;
+}
+
+#politicaDePrivacidade:hover {
     color: #ff179bc0;
 }
 
@@ -511,5 +527,9 @@ option:disabled {
 }
 
 .linkLoginContainer a {
+    color: #000;
+}
+
+.linkLoginContainer a:hover {
     color: #ff179bc0;
 }
