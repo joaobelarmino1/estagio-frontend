@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #1ed760;
+}
+
+header {
+    background-color: black;
+}
+
+.topo {
+    position: relative;
+    padding: 18px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    padding-left: 25px;
+}
+
+nav a {
+    color: white;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#banner {
+    background-color: rgb(41, 65, 171);
+    color: #1ed760;
+    text-align: center;
+    background-image: url('../img/banner1.svg');
+    background-size: 170%;
+    background-position: 46% 4%;
+    padding: 250px 0;
+}
+
+#banner h1 {
+    font-size: 110px;
+    width: 900px;
+    margin: auto;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+#banner p {
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+#botao {
+    background-color: #1ed760;
+    width: 250px;
+    color: rgb(41, 65, 171);
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 14px;
+}
+
+#botao:hover {
+    font-size: 15px;
+    padding: 18px 3px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.rodape1 {
+    width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.rodape1 ul {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    padding-left: 98px;
+}
+
+.rodape1 .info2 li {
+    padding-bottom: 24px;
+}
+
+.titulo {
+    color: #919496;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.redes li {
+    display: inline-block;
+    background-color: #222326;
+    border-radius: 100%;
+    padding: 14px;
+}
+
+.rodape2 {
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.rodape2 ul {
+    display: inline-block;
+}
+
+.rodape2 .info li {
+    display: inline-block;
+}
+
+.rodape2 a {
+    padding: 0 20px;
+    font-size: small;
+    color: #919496;
+}
+
+.fim {
+    list-style: none;
+    padding-left: 320px;
+    text-align: right;
+    font-size: small;
+    color: #919496;
+}
+
+footer ul li {
+    box-sizing: border-box;
+}
