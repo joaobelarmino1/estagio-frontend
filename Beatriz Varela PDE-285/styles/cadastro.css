@@ -25,6 +25,10 @@ a {
     text-decoration: underline;
 }
 
+a:hover{
+    color: rgb(233, 143, 245);
+}
+
 button {
     background-color: rgb(201, 115, 212);
     padding: 18px 36px;
