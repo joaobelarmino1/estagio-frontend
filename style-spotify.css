@@ -1,0 +1,112 @@
+
+    
+
+
+header {
+    text-align: center;
+    align-items: center;    
+    background: url(miley4.jpg);
+    background-size: cover;
+    margin: auto;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+div {
+    text-align: center;
+  }
+
+.logo {
+    width: 15%;
+}
+
+.Frase {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;}
+
+.subfrase {
+    font-weight: bold;
+    color: black
+}
+
+.enviar {
+    width: 30%;
+    padding: 15px 0;
+    background: rgb(59, 59, 240);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    transition: 1s all;
+    margin-bottom: 2%;
+}
+
+.enviar:hover {
+    transform: scale(1.2);
+    background: black;
+
+}
+
+.checkbox {
+    margin-top: auto;
+    font-weight: bold;
+}
+
+form {
+    margin: 20px 0;
+    color: black;
+    border: black;
+}
+
+form label, form legend {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 95%;
+    text-align: center;
+    border: black;
+    font-weight: bold;
+}
+
+.input-padrao {
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 30%;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+.sex {
+    display: contents;
+    padding: 2%;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.final {
+
+    width: 30%;
+    padding: 15px 0;
+    background: rgb(63, 224, 63);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    transition: 1s all;
+    margin-bottom: 2%;
+    font-weight: bold;
+
+}

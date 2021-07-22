@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style-spotify.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <title>Inscreva-se Spotify</title>
+
+    </head>
+
+    <body>
+    
+
+        <header> 
+
+            <div id="container-image"></div>
+
+            <img class="logo" src="spotify-logo.png">
+    
+            <p class="Frase">Inscreva-se grátis e comece a <br>curtir.</p>
+            <input type="submit" value="Inscrever-se com o Facebook" class="enviar"> 
+
+            <div>
+            <label class="checkbox"><input type="checkbox" checked>Eu concordo com os <a>Termos e condições de uso do Spotify.</a></label>
+
+            <p class="subfrase">Para saber mais como o Spotify coleta,utiliza, compartilha e protege seus dados <br>pessoais leia a <a>Política de privacidade do Spotify</a></p>
+        </div>
+
+        <form>
+            <label for="email1">Qual é o seu e-mail?</label>
+            <input type="text" id="email1" class="input-padrao" required placeholder="seuemail@dominio.com"">
+        
+            <label for="email">Confirme seu e-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="senha">Crie uma senha</label>
+            <input type="text" id="Senha" class="input-padrao" required placeholder="Digite aqui sua senha.">
+
+            <label for="apelido">Como devemos chamar você?</label>
+            <input type="text" id="apelido" class="input-padrao" required placeholder="Insira aqui como quer ser chamado :)">
+
+            <fieldset>
+                <legend>Com qual genêro você se identifica?</legend>
+                <label class="sex" for="masculino"><input type="radio" name="sexo" value="masculino" id="masculino">Masculino</label>
+                
+
+                <label class="sex" for="feminino"><input type="radio" name="sexo" value="feminino" id="feminino">Feminino</label>
+                
+                <label class="sex" for="naobinario"><input type="radio" name="sexo" value="não binario" id="naobinario">Não binário</label>
+               </fieldset>
+       
+
+        <label class="checkbox2"><input type="checkbox">Não quero receber mensagens de marketing do Spotify.</label>
+        <label class="checkbox2"><input type="checkbox">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</label>
+        <label class="checkbox2"><input type="checkbox">Eu concordo com os Termos e condições de uso do Spotify.</label>
+
+        <p>Para saber mais sobre como o Spotify coleta, utiliza, <br>compartilha e protege seus dados pessoais, leia a Política de Privacidade do Spotify.</p>
+
+        <input type="submit" value="Inscrever-se" class="final"> 
+
+            </form>
+
+        </header>
+
+
+
+    </body>
