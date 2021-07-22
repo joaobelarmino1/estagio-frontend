@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #aaf082;
+}
+header, main {
+    width: 100%;
+    max-width: 1196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    margin-top: 32px;
+    width: 130px; height: 40px;
+}
+header h1 {
+    text-shadow: 2px 2px #6d74da;
+    font-size: 28px;
+    line-height: 1.0;
+    margin-top: 32px;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+    word-wrap: break-word;
+    max-width: 35%;
+}
+main .botaoIni {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: #6d74da;
+    margin-top: 60px;
+    padding: 15px 50px;
+    border-radius: 50px;
+    border-style: none;
+    transition: 1s transform;
+}
+main button:hover {
+    transform: scale(1.2);  
+}
+.termos {
+    vertical-align: middle;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: bolder;
+    color:white;
+    border-style: none;
+}
+.termos input {
+transform: scale(1.3);
+margin-right: 10px;
+width: 16px;
+}
+.termos a {
+    color:rgb(29, 185, 84);
+}
+#termosP {
+    text-align:center;
+    color: rgb(34, 34, 34);
+    font-size: 12px;
+    font-weight: bolder;
+    word-wrap: break-word;
+    max-width: 35%;
+}
+#termosP a {
+    color:rgb(29, 185, 84);
+}
+.ou {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ou hr{
+    width: 150px;
+    height: 1px;
+    background-color:rgb(61, 61, 61);
+    border-style: none;
+    margin: 0 20px;
+}
+.ou p{
+    letter-spacing: 5px;
+    font-weight:bolder;
+    font-size: 12px;
+    color:rgb(61, 61, 61);
+}
+main .parte1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+}
+main .parte1 label, #nasc, #genre{
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px #6d74da;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+main .parte1 input{
+    border: none;
+    width: 400px;
+    height: 20px;
+    padding: 14px;
+}
+.tel{
+    margin-top: 8px;
+    font-size: 12px;
+    color:rgb(29, 185, 84);
+}
+main .parte1 #disc {
+    font-size: 12px;
+    margin-top: 8px;
+    color: rgb(34, 34, 34);
+}
+main fieldset{
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+#dia, #ano{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 71px;
+    height: 20px;
+    padding: 14px;
+}
+#mes{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 48px;
+    padding: 14px;
+}
+.margem{
+    margin: 0 20px;
+}
+#genre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -5px;
+}
+.sexo {
+    margin: -2px 8px;
+    vertical-align: middle;
+}
+#check {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 35vw;
+}
+.termosFinal {
+    display: flex;
+}
+
+label.termosRodape .ipt {
+    width: 16px;
+    margin-right: 10px;
+}
+
+.marginTop {
+    margin-top: 20px;
+}
+.blocofinal {
+    margin-bottom: 40px;
+    display:flex;
+    flex-direction: column;
+
+}
+#termosEnd {
+    text-align:center;
+    color: rgb(34, 34, 34);
+    font-size: 12px;
+    font-weight: bolder;
+}
+.botaoFim {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: #6d74da;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+    border-radius: 50px;
+    border-style: none;
+    transition: 1s transform;
+    width: 200px;
+    margin: 30px auto 10px auto;
+}
+.respiro {
+    margin-bottom: 40px;
+}
+
