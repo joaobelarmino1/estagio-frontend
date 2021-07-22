@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';}
+    
+body{
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    color: #fff;
+    letter-spacing: 1px;
+    background: linear-gradient(-45deg,#8D0BD9 7%,#0562AD,#0CB5F7,#6ED10A,#F7E007,orange,red);
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-shadow: rgb(0 0 0) 1px 1px 2px;}
+
+.botao-face {
+    margin: auto;
+    background-color: #3085F3;
+    color: #ffffff;
+    border: none;
+    width: 50%;
+    padding: 15px 0;
+    font-size: 14px;
+    border-radius: 50px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    transition: 0.3s transform;
+    cursor: pointer;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.face {
+    padding-right: 2px;
+}
+
+.botao-face:hover{
+    background: #4d9aff;
+    transform: scale(1.05);
+}
+
+.termos {
+    padding-top: 5px;
+    padding-bottom: 24px;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: underline;
+    color: #FF7600;
+}
+
+a:hover {
+    color: hsl(28, 100%, 63%);
+}
+
+.politicas {
+    font-size: 11px;
+    padding-bottom: 16px;
+}
+
+hr {
+    width: 170px;
+    height: 1px;
+    margin: 10px;
+    border-style: none;
+    background-color: #fff;
+}
+
+.ou {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+main {
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(85, 85, 85);
+}
+
+form label, p {
+    letter-spacing: 1.5px;
+}
+
+form .input-padrao {
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    background-color: #fff;
+    border: #ffffff solid 1px;
+    color: #000;
+}
+
+input, select::placeholder {
+    color: #a0a0a0;
+}
+
+.space label {
+    display: block;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.numero-tel {
+    display: block;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.space {
+    margin-bottom: 30px;
+}
+
+.data-nasc {
+    display: flex;
+    justify-content: center
+}
+
+.data-nasc div {
+    margin-right: 12px;
+    display: inline-block;
+}
+
+fieldset legend {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.data-nasc input, select {
+    width: 120px;
+    height: 50px;
+    display: block;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: #ffffff solid 1px;
+    color: #000;
+}
+
+.genero{
+    margin-bottom: 30px;
+}
+
+.genero label {
+    margin-right: 10px;
+}
+
+.info {
+    margin-bottom: 26px;
+    display: block;
+    font-size: 15px;
+}
+
+.politica-fim {
+    margin-top: 40px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.radio {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.login {
+    text-align: center;
+}
+
+.botao-enviar {
+    display: block;
+    margin: auto;
+    background-color: #FF7600;
+    color: #ffffff;
+    border: none;
+    width: 40%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    margin-top: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: hsl(28, 100%, 63%);
+    transform: scale(1.05);
+}
