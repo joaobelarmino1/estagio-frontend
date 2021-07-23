@@ -228,10 +228,11 @@ a {
     left: 100px;
     opacity: 20%;
     background-color: white;
-    width: 600px;
-    height: 600px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     transition: 1s transform;
+
 }
 .circuloEstilo:hover {
     transform: scale(1.2);
@@ -242,9 +243,10 @@ a {
     right: 100px;
     opacity: 20%;
     background-color: white;
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     transition: 1s transform;
+    
 }
 
