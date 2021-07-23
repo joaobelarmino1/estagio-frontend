@@ -4,7 +4,11 @@
     font-family: sans-serif;
 }
 body {
-    background-color: #aaf082;
+    background-color: #1e3944;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 header, main {
     width: 100%;
@@ -19,13 +23,11 @@ header img {
     width: 130px; height: 40px;
 }
 header h1 {
-    text-shadow: 2px 2px #6d74da;
     font-size: 28px;
     line-height: 1.0;
     margin-top: 32px;
     text-align: center;
     color:white;
-    font-weight: bolder;
     word-wrap: break-word;
     max-width: 35%;
 }
@@ -50,7 +52,6 @@ main button:hover {
     margin-top: 40px;
     margin-bottom: 24px;
     font-size: 14px;
-    font-weight: bolder;
     color:white;
     border-style: none;
 }
@@ -60,7 +61,7 @@ margin-right: 10px;
 width: 16px;
 }
 .termos a {
-    color:rgb(29, 185, 84);
+    color: #2a9d8f;;
 }
 #termosP {
     text-align:center;
@@ -71,10 +72,11 @@ width: 16px;
     max-width: 35%;
 }
 #termosP a {
-    color:rgb(29, 185, 84);
+    color:#2a9d8f;
 }
 .ou {
     margin-top: 40px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,7 +84,7 @@ width: 16px;
 .ou hr{
     width: 150px;
     height: 1px;
-    background-color:rgb(61, 61, 61);
+    background-color:rgb(255, 255, 255);
     border-style: none;
     margin: 0 20px;
 }
@@ -90,7 +92,7 @@ width: 16px;
     letter-spacing: 5px;
     font-weight:bolder;
     font-size: 12px;
-    color:rgb(61, 61, 61);
+    color:rgb(255, 255, 255);
 }
 main .parte1{
     display: flex;
@@ -101,9 +103,7 @@ main .parte1{
     text-align: left;
 }
 main .parte1 label, #nasc, #genre{
-    font-weight: bolder;
     color: white;
-    text-shadow: 1px 1px #6d74da;
     margin-top: 15px;
     margin-bottom: 10px;
 }
@@ -116,12 +116,11 @@ main .parte1 input{
 .tel{
     margin-top: 8px;
     font-size: 12px;
-    color:rgb(29, 185, 84);
 }
 main .parte1 #disc {
     font-size: 12px;
     margin-top: 8px;
-    color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
 }
 main fieldset{
     border: none;
@@ -152,17 +151,22 @@ main fieldset{
     align-items: center;
     margin-bottom: -5px;
 }
-.sexo {
-    margin: -2px 8px;
-    vertical-align: middle;
-}
+
 #check {
     display: flex;
     flex-direction: column;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 35vw;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    padding: 30px;
 }
 .termosFinal {
     display: flex;
@@ -184,10 +188,12 @@ label.termosRodape .ipt {
 }
 #termosEnd {
     text-align:center;
-    color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: bolder;
 }
+
+
 .botaoFim {
     font-size: 15px;
     font-weight: bolder;
@@ -206,5 +212,39 @@ label.termosRodape .ipt {
 }
 .respiro {
     margin-bottom: 40px;
+}
+a {
+    color:#2a9d8f;  
+}
+.divGenero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30vw;
+}
+#circulo1  {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    opacity: 20%;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    transition: 1s transform;
+}
+.circuloEstilo:hover {
+    transform: scale(1.2);
+}
+#circulo2  {
+    position: absolute;
+    top: 800px;
+    right: 100px;
+    opacity: 20%;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    transition: 1s transform;
 }
 

@@ -15,7 +15,7 @@
         <button class="botaoIni" type="button">Inscrever-se com o Facebook</button>
         <label class="termos"><input type="checkbox"> Eu concordo com os <a href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de uso do Spotify.</a></input>
         </label>
-        <p id="termosP">Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify</a>.</p>
+        <p class="termos">Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify</a>.</p>
         <div class="ou">
             <hr>
             <p>ou</p>
@@ -73,20 +73,18 @@
                 </div>                 
             </fieldset>
             <p id="genre">Qual é o seu gênero? </p>
-            <div id="genre">
+            <div class="divGenero">
             
                 <input name="genero" id="masc" type="radio">
-                <label class="sexo"for="masc">Masculino</label>
+                <label for="masc">Masculino</label>
     
-                <div class="margem"></div>
     
                 <input name="genero" id="fem" type="radio">
-                <label class="sexo" for="fem">Feminino</label>
+                <label for="fem">Feminino</label>
     
-                <div class="margem"></div>
     
                 <input name="genero" id="nb" type="radio">
-                <label class="sexo" for="nb">Não binário</label>
+                <label for="nb">Não binário</label>
             </div>
 
             <div class="blocofinal">
@@ -99,7 +97,7 @@
             </div> 
             <p id="termosEnd">Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify</a>.</p>
             <button  class="botaoFim" type="button">Inscrever-se</button>
-            <p id="termosEnd">Já tem uma conta?<a href="https://www.spotify.com/br/legal/privacy-policy/">Faça login</a>.</p>    
+            <p id="termosEnd">Já tem uma conta?<a id ="ultimoA" href="https://accounts.spotify.com/login/?continue=https%3A%2F%2Fopen.spotify.com%2F%3Fl2l%3D1">Faça login</a>.</p>    
         </form>
         <div class="respiro"></div>
     </div>
@@ -107,7 +105,8 @@
 
     </main>
     <footer>
-    
+    <div class="circuloEstilo" id="circulo1"></div>
+    <div class="circuloEstilo" id="circulo2"></div>
 
     </footer>
 </body>
