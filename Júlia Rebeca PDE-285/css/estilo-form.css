@@ -1,212 +1,213 @@
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';}
-    
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';}
+  
 body{
-    max-width: 500px;
-    margin: 0 auto;
-    font-family: 'Roboto';
-    background-color: #2E2E2E;
-    color: #fff;
-    letter-spacing: 1px;
-    background-image: url('../img/banner.svg');
-    background-size: 155%;
-    background-position: 61% 10%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: 'Roboto';
+  background-color: #2E2E2E;
+  color: #fff;
+  letter-spacing: 1px;
+  background-image: url('../img/banner.svg');
+  background-size: 155%;
+  background-position: 61% 10%;
 }
 
 header {
-    text-align: center;
-    padding: 30px 0;
+  text-align: center;
+  padding: 30px 0;
 }
 
 h1 {
-    font-size: 32px;
-    margin-top: 30px;
-    font-weight: bold;
+  font-size: 32px;
+  margin-top: 30px;
+  font-weight: bold;
 }
 
 .botao-face {
-    display: block;
-    margin: auto;
-    background-color: #3085F3;
-    color: #ffffff;
-    border: none;
-    width: 50%;
-    padding: 15px 0;
-    font-size: 14px;
-    border-radius: 50px;
-    margin-bottom: 18px;
-    font-weight: bold;
-    transition: 0.3s transform;
-    cursor: pointer;
+  display: block;
+  margin: auto;
+  background-color: #3085F3;
+  color: #ffffff;
+  border: none;
+  width: 50%;
+  padding: 15px 0;
+  font-size: 14px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+  font-weight: bold;
+  transition: 0.3s transform;
+  cursor: pointer;
 }
 
 .botao-face:hover{
-    background: #4d9aff;
-    transform: scale(1.05);
+  background: #4d9aff;
+  transform: scale(1.05);
 }
 
 .termos {
-    padding-top: 5px;
-    padding-bottom: 24px;
-    font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 24px;
+  font-size: 15px;
 }
 
 .politicas {
-    font-size: 11px;
-    padding-bottom: 16px;
+  font-size: 11px;
+  padding-bottom: 16px;
 }
 
 hr {
-    width: 170px;
-    height: 1px;
-    margin: 10px;
-    border-style: none;
-    background-color: #fff;
+  width: 170px;
+  height: 1px;
+  margin: 10px;
+  border-style: none;
+  background-color: #fff;
 }
 
 .ou {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 16px;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+  color: #fff;
 }
 
 form {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 form label, p {
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 
 form .input-padrao {
-    width: 100%;
-    height: 50px;
-    display: block;
-    border: black solid 1px;
-    border-radius: 5px;
-    padding: 0 15px;
-    font-size: 16px;
-    background-color: #2E2E2E;
-    border: #ffffff solid 1px;
-    color: #fff;
+  width: 100%;
+  height: 50px;
+  display: block;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: #2E2E2E;
+  border: #ffffff solid 1px;
+  color: #fff;
 }
 
 input, select::placeholder {
-    color: #a0a0a0;
+  color: #a0a0a0;
 }
 
 .space label {
-    display: block;
-    padding-bottom: 10px;
-    font-weight: bold;
+  display: block;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .numero-tel {
-    display: block;
-    padding-top: 8px;
-    font-size: 14px;
+  display: block;
+  padding-top: 8px;
+  font-size: 14px;
 }
 
 .space {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .data-nasc {
-    display: flex;
-    justify-content: center
+  display: flex;
+  justify-content: center
 }
 
 .data-nasc div {
-    margin-right: 12px;
-    display: inline-block;
+  margin-right: 12px;
+  display: inline-block;
 }
 
 fieldset legend {
-    margin-bottom: 12px;
-    font-weight: bold;
+  margin-bottom: 12px;
+  font-weight: bold;
 }
 
 .data-nasc input, select {
-    width: 120px;
-    height: 50px;
-    display: block;
-    border: black solid 1px;
-    border-radius: 5px;
-    padding: 0 15px;
-    font-size: 16px;
-    background-color: #2E2E2E;
-    border: #ffffff solid 1px;
-    color: #fff;
+  width: 120px;
+  height: 50px;
+  display: block;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: #2E2E2E;
+  border: #ffffff solid 1px;
+  color: #fff;
 }
 
 .genero{
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .genero label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .info {
-    margin-bottom: 26px;
-    display: block;
-    font-size: 15px;
+  margin-bottom: 26px;
+  display: block;
+  font-size: 15px;
 }
 
 .politica-fim {
-    margin-top: 40px;
-    font-size: 11px;
-    text-align: center;
+  margin-top: 40px;
+  font-size: 11px;
+  text-align: center;
 }
 
 .checkbox {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .radio {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .login {
-    text-align: center;
+  text-align: center;
 }
 
 .botao-enviar {
-    display: block;
-    margin: auto;
-    background-color: #FF7600;
-    color: #ffffff;
-    border: none;
-    width: 40%;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 50px;
-    margin-bottom: 24px;
-    margin-top: 18px;
-    line-height: 24px;
-    cursor: pointer;
+  display: block;
+  margin: auto;
+  background-color: #FF7600;
+  color: #ffffff;
+  border: none;
+  width: 40%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+  margin-top: 18px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 0.3s transform;
 }
 
 .botao-enviar:hover {
-    background: hsl(28, 100%, 55%);
-    transform: scale(1.05);
+  background: hsl(28, 100%, 55%);
+  transform: scale(1.05);
 }
 
 a {
-    text-decoration: underline;
-    color: #FF7600;
+  text-decoration: underline;
+  color: #FF7600;
 }
 
 a:hover {
-    color: hsl(28, 100%, 55%);
+  color: hsl(28, 100%, 55%);
 }
