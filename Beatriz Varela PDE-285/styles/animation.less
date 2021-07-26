@@ -1,0 +1,47 @@
+
+span {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: @primary-color;
+    position: absolute;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    opacity: 40%;
+}
+
+.span1 {
+    left: 5vw;
+    animation-delay: 2s;
+}
+
+.span2 {
+    left: 15vw;
+    animation-delay: 0s;
+}
+
+.span3 {
+    left: 65vw;
+    animation-delay: 5s;
+}
+
+.span4 {
+    left: 70vw;
+    animation-delay: 2s;
+}
+
+.span5 {
+    left: 90vw;
+    animation-delay: 1s;
+}
+
+@keyframes example {
+    0% {
+        top: 1300px;
+    }
+
+    100% {
+        top: -100px;
+    }
+}
