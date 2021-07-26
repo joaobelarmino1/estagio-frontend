@@ -1,0 +1,29 @@
+// Variaveis
+@cor-padrao: #e27515;
+@cor-secundaria: #2E2E2E;
+@cor-fontes: #FFF;
+
+//Mixins
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';}
+    
+body{
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    background-color: @cor-secundaria;
+    color: @cor-fontes;
+    letter-spacing: 1px;
+    background-image: url('../img/banner.svg');
+    background-size: 155%;
+    background-position: 61% 10%;
+}
+
+@import "header";
+
+@import "main";

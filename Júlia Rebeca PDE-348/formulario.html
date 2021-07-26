@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se - Spotify</title>
+    <link rel="stylesheet" href="css/estilo-form.css">
+    <link rel="shortcut icon" href="img/icone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/spotify.svg" width="150px"></a>
+        <h1>Inscreva-se grátis e comece a curtir.</h1>
+    </header>
+
+    <main>
+
+        <button class="botao-face">Inscrever-se com o Facebook</button>
+
+        <div class="termos">
+            <input type="checkbox" id="termos" class="checkbox"> Eu concordo com os <a
+                href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de Uso do
+                Spotify.</a>
+        </div>
+
+        <div class="politicas">
+            <p>Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia
+                a
+                <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify</a>.
+            </p>
+        </div>
+
+        <div class="ou">
+            <hr>
+            <p>ou</p>
+            <hr>
+        </div>
+
+        <form>
+
+            <div class="space">
+                <label for="email">Qual é o seu e-mail?</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="Insira seu e-mail.">
+                <p><a href="#" class="numero-tel">Usar número de telefone.</a></p>
+            </div>
+
+            <div class="space">
+                <label for="email">Confirme seu e-mail</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="Insira seu e-mail novamente.">
+            </div>
+
+            <div class="space">
+                <label for="senha">Crie uma senha</label>
+                <input type="password" id="senha" class="input-padrao" required placeholder="Crie uma senha.">
+            </div>
+
+            <div class="space">
+                <label for="nome">Como devemos chamar você?</label>
+                <input type="text" id="nome" class="input-padrao" required placeholder="Insira um nome de perfil.">
+                <p class="numero-tel">Isso será exibido no seu perfil.</p>
+            </div>
+
+            <fieldset class="data-nasc">
+                <legend>Qual a sua data de nascimento?</legend>
+                <div class="space">
+                    <div>
+                        <p>Dia</p>
+                        <input type="number" placeholder="DD">
+                    </div>
+                    <div>
+                        <p>Mês</p>
+                        <select name="mes" id="mes">
+                            <option selected disabled>Mês</option>
+                            <option>Janeiro</option>
+                            <option>Fevereiro</option>
+                            <option>Março</option>
+                            <option>Abril</option>
+                            <option>Maio</option>
+                            <option>Junho</option>
+                            <option>Julho</option>
+                            <option>Agosto</option>
+                            <option>Setembro</option>
+                            <option>Outubro</option>
+                            <option>Novembro</option>
+                            <option>Dezembro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Ano</p>
+                        <input type="number" placeholder="AAAA">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="genero">
+                <legend>Qual é o seu gênero?</legend>
+                <label for="radio-masculino">
+                    <input type="radio" name="genero" id="radio-masculino" class="radio"> Masculino
+                </label>
+
+                <label for="radio-feminino">
+                    <input type="radio" name="genero" id="radio-feminino" class="radio"> Feminino
+                </label>
+
+                <label for="radio-binario">
+                    <input type="radio" name="genero" id="radio-binario" class="radio"> Não
+                    binário
+                </label>
+            </fieldset>
+
+            <label class="info">
+                <input type="checkbox" class="checkbox"> Não quero receber mensagens de marketing do Spotify
+            </label>
+
+            <label class="info">
+                <input type="checkbox" class="checkbox"> Compartilhar meus dados cadastrais com os provedores de
+                conteúdo do
+                Spotify para
+                fins de marketing.
+            </label>
+
+
+            <label class="info">
+                <input type="checkbox" class="checkbox"> Eu concordo com os <a
+                    href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de Uso do
+                    Spotify.</a>
+            </label class="info">
+
+
+            <p class="politica-fim"> Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus
+                dados
+                pessoais, leia a
+                <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify</a>.
+            </p>
+
+
+            <input type="submit" class="botao-enviar" value="Inscrever-se">
+
+            <p class="login">Já tem uma conta? <a href="#">Faça login</a>.</p>
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
