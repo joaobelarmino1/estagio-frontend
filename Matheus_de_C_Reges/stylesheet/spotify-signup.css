@@ -391,6 +391,7 @@ body {
 }
 #button-box {
   text-align: center;
+  justify-content: space-around;
 }
 .button {
   border-style: none;
@@ -399,6 +400,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 80%;
+  margin: 0 5px;
   cursor: pointer;
 }
 .button img:hover {
