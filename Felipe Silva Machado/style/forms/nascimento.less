@@ -1,0 +1,92 @@
+.dataDeNascimento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerDia {
+    width: 20%;
+}
+
+#dia {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    border: 1px solid @cor-padrao;
+    padding: 14px;
+    color: #000;
+}
+
+.containerMes {
+    width: 45%;
+}
+
+.selectionContainerMes {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.selectionMes {
+    display: block;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    appearance: none;
+    text-indent: 0.01px;
+    border-radius: 4px;
+    padding: 14px 44px 14px 14px;
+    border: 1px solid @cor-padrao;
+    background-color: #fff;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+
+    &:disabled {
+        color: @cor-padrao;
+    }
+
+}
+
+.svgMes {
+    color: @cor-padrao;
+    pointer-events: none;
+    position: absolute;
+    right: 14px;
+}
+
+.containerAno {
+    width: 25%;
+}
+
+#ano {
+    border: 0px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    padding: 14px;
+    border: 1px solid @cor-padrao;
+}

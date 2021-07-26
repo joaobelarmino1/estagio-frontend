@@ -1,0 +1,37 @@
+.signupButton {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.botaoSubmit {
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 500px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    user-select: none;
+    vertical-align: middle;
+    padding: 0px;
+    align-self: center;
+    font-weight: 700;
+    transform: scale(1.04);
+    letter-spacing: 0.9px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+
+    &:hover {
+        .transformDosBotoes;
+    }
+}
+
+.botaoSubmitInner {
+    background-color: @cor-padrao;
+    border-radius: 500px;
+    font-size: inherit;
+    padding: 16px 48px;
+    cursor: pointer;
+}

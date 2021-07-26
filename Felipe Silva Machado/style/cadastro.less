@@ -1,0 +1,43 @@
+@font-face {font-family: "CircularSpotifyTxT-Black";
+    src: url("01173b246d9d9ea808ea75a26b3b61bb.eot"); /* IE9*/
+    src: url("01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), /* chrome、firefox */
+    url("01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), /* chrome、firefox */
+    url("01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("01173b246d9d9ea808ea75a26b3b61bb.svg#CircularSpotifyTxT-Black") format("svg"); /* iOS 4.1- */
+}
+
+.demo{
+    font-family:"CircularSpotifyTxT-Black" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/img/capaCadastro.png);
+    background-size: 100%;
+}
+
+/* Imports */
+
+@import "helpers/variaveis";
+
+@import "layout/cabecalho";
+@import "layout/botaoFacebook";
+@import "layout/fromDivider";
+@import "layout/botaoInscrevase";
+@import "layout/mediaQueries";
+
+@import "termos/termos";
+@import "termos/marketing";
+@import "termos/compartilhaDados";
+@import "termos/politica";
+
+@import "forms/formulario";
+@import "forms/nascimento";
+@import "forms/genero";
+@import "forms/jaTemLogin";

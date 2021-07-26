@@ -1,535 +1,518 @@
-@font-face {font-family: "CircularSpotifyTxT-Black";
-    src: url("01173b246d9d9ea808ea75a26b3b61bb.eot"); /* IE9*/
-    src: url("01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), /* chrome、firefox */
-    url("01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), /* chrome、firefox */
-    url("01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("01173b246d9d9ea808ea75a26b3b61bb.svg#CircularSpotifyTxT-Black") format("svg"); /* iOS 4.1- */
+@font-face {
+  font-family: "CircularSpotifyTxT-Black";
+  src: url("01173b246d9d9ea808ea75a26b3b61bb.eot");
+  /* IE9*/
+  src: url("01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), /* chrome、firefox */ url("01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), /* chrome、firefox */ url("01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("01173b246d9d9ea808ea75a26b3b61bb.svg#CircularSpotifyTxT-Black") format("svg");
+  /* iOS 4.1- */
 }
-
-.demo{
-    font-family:"CircularSpotifyTxT-Black" !important;
-    font-size:16px;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
+.demo {
+  font-family: "CircularSpotifyTxT-Black" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 body {
-    margin: 0;
-    padding: 0;
-    background: url(/img/capaCadastro.png);
-    background-size: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(/img/capaCadastro.png);
+  background-size: 100%;
 }
-
-/* CABEÇALHO */
-
+/* Imports */
+.hoverDeItens {
+  color: #ff179a;
+}
+.hoverDeItensSvg {
+  fill: #ff179a;
+}
+.transformDosBotoes {
+  transform: scale(1.02);
+}
 .signup {
-    display: block;
+  display: block;
 }
-
 .signup {
-    max-width: 450px;
-    margin: 0 auto;
-    align-items: center;
-    padding-bottom: 130px;
+  max-width: 450px;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 130px;
 }
-
 .fundoSignup {
-    margin-top: 50px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    position:relative;
-    transition: all .2s ease-in-out;
-    box-shadow: 1px 5px 20px #ff179bc0;
-    opacity: 90%;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 1px 5px 20px #ff179a;
+  opacity: 90%;
 }
-
 .fundoSignup:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
-
 .headerContainer {
-    padding: 40px 0 20px;
-    text-align: center;
+  padding: 40px 0 20px;
+  text-align: center;
 }
-
 .logo {
-    text-align: center;
+  text-align: center;
 }
-
-.logo svg{
-    height: 40px;
+.logo svg {
+  height: 40px;
 }
-
 #svgLogo {
-    vertical-align: middle;
+  vertical-align: middle;
 }
-
 .logoTexto {
-    font-family: "CircularSpotifyTxT-Black" !important;
-    color: #000;
-    letter-spacing: 5px;
-    padding-left: 5px;
-    font-weight: 700;
-    text-transform: none;
-    cursor: default;
+  font-family: "CircularSpotifyTxT-Black" !important;
+  color: #000;
+  letter-spacing: 5px;
+  padding-left: 5px;
+  font-weight: 700;
+  text-transform: none;
+  cursor: default;
 }
-
 .headerContainer h2 {
-    font-family: "CircularSpotifyTxT-Black" !important;
-    letter-spacing: -0.04em;
-    text-align: center;
-    line-height: 36px;
-    font-size: 32px;
-    font-weight: 700;
-    cursor: default;
+  font-family: "CircularSpotifyTxT-Black" !important;
+  letter-spacing: -0.04em;
+  text-align: center;
+  line-height: 36px;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: default;
 }
-
-/* BOTAO FACEBOOK */
-
-.botaoFacebook svg {
-    fill: #fff;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-
 .botaoFacebookContainer {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 22px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 22px;
 }
-
-.botaoFacebookContainer a{
-    text-decoration: none;
+.botaoFacebookContainer a {
+  text-decoration: none;
 }
-
 .botaoFacebook {
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    font-size: 16px;
-    color: #fff;
-    background-color: #1569d8;
-    border-radius: 500px;
-    padding: 14px 32px;
-    transform: scale(1.04);
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1569d8;
+  border-radius: 500px;
+  padding: 14px 32px;
+  transform: scale(1.04);
 }
-
 .botaoFacebook:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
-
-/* TERMOS */
-
-.termos {
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    font-weight: 300;
-    padding-bottom: 4px;
-    padding-top: 4px;
+.botaoFacebook svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
-
-#termosECondicoes{
-    color: #000;
+.botaoFacebook p {
+  text-decoration: none;
+  cursor: default;
+  color: #fff;
 }
-
-#termosECondicoes:hover{
-    color: #ff179bc0;
-}
-
-.saibaMais {
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 12px;
-}
-
-#politicaDePrivacidade {
-    color: #000;
-}
-
-#politicaDePrivacidade:hover {
-    color: #ff179bc0;
-}
-
-/* From Divider */
-
 .formDivider {
-    display: table;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    margin: 0px auto lem;
-    color: rgb(127, 127, 127);
-    position: relative;
-    text-align: center;
-    width: 85%;
-    padding-bottom: 20px;
-    padding-left: 35px;
+  display: table;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0px auto lem;
+  color: #7f7f7f;
+  position: relative;
+  text-align: center;
+  width: 85%;
+  padding-bottom: 20px;
+  padding-left: 35px;
 }
-
 .formDivider::before {
-    border-top: 1px solid rgb(204, 204, 204);
-    content: "";
-    display: table-cell;
-    position: relative;
-    top: 0.8em;
-    width: 42%;
+  border-top: 1px solid #cccccc;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.8em;
+  width: 42%;
 }
-
 .formDivider::after {
-    border-top: 1px solid rgb(204, 204, 204);
-    content: "";
-    display: table-cell;
-    position: relative;
-    top: 0.8em;
-    width: 42%;
+  border-top: 1px solid #cccccc;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.8em;
+  width: 42%;
 }
-
-/* Formulário */
-
-.labelTextGroup {
-    color: black;
-    font-family: "CircularSpotifyTxT-Black" !important;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    padding-bottom: 8px;
-}
-
-.inputGroup {
-    border: 1px solid #ff179bc0;
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0px;
-    width: 90%;
-    padding: 14px;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #000;
-}
-
-.formGroup {
-    box-sizing: border-box;
-    padding-bottom: 24px;
-}
-
-.labelTextDisplayName {
-    color: rgb(24, 24, 24);
-    font-family: "CircularSpotifyTxT-Black" !important;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    padding-top: 8px;
-}
-
-/* DATA DE NASCIMENTO */
-
-.dataDeNascimento {
-    display: flex;
-    justify-content: space-between;
-}
-
-.containerDia {
-    width: 20%;
-}
-
-#dia {
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 4px;
-    border: 1px solid #ff179bc0;
-    padding: 14px;
-    color: #000;
-}
-
-.containerMes {
-    width: 45%;
-}
-
-.selectionContainerMes {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.selectionMes {
-    display: block;
-    font-size: 16px;
-    font-weight: 400px;
-    line-height: 24px;
-    letter-spacing: 0px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    appearance: none;
-    text-indent: 0.01px;
-    border-radius: 4px;
-    padding: 14px 44px 14px 14px;
-    border: 1px solid #ff179bc0;
-    background-color: #fff;
-}
-
-option {
-    font-weight: normal;
-    display: block;
-    white-space: nowrap;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-}
-
-option:disabled {
-    color: #ff179bc0;
-}
-
-.svgMes {
-    color: #ff179bc0;
-    pointer-events: none;
-    position: absolute;
-    right: 14px;
-}
-
-.containerAno {
-    width: 25%;
-}
-
-#ano {
-    border: 0px;
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0px;
-    width: 50%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 4px;
-    padding: 14px;
-    border: 1px solid #ff179bc0;
-}
-
-/* GENERO */
-
-.generoContainerGroup {
-    box-sizing: border-box;
-    padding: 0px 0px 24px;
-    min-width: 0px;
-    margin: 0px;
-    border: 0px;
-}
-
-.legendText {
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    align-items: center;
-    display: flex;
-    font-weight: 700;
-    width: 100%;
-    padding-bottom: 8px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.generoOpcoes {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.generoContainer {
-    box-sizing: border-box;
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    align-items: center;
-    display: flex;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    position: relative;
-    min-height: 32px;
-}
-
-.generoText {
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 12px;
-    padding-right: 24px;
-}
-
-/* Receber mensagens do marketing */
-
-.mensagemMarketing {
-    box-sizing: border-box;
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    padding-bottom: 24px;
-}
-
-.checkbox {
-    box-sizing: border-box;
-    align-items: center;
-    display: flex;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    position: relative;
-    min-height: 32px;
-}
-
-.visualCheckboxMarketing {
-    border: 0px;
-    clip: rect(0px, 0px, 0px, 0px);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0px;
-    position: absolute;
-    width: 1px;
-}
-
-.marketingText {
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    padding-left: 12px;
-    padding-right: 24px;
-}
-
-/* COMPARTILHAR DADOS */
-
-.compartilharDados {
-    box-sizing: border-box;
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    padding-bottom: 24px;
-}
-
-.checkbox {
-    box-sizing: border-box;
-    align-items: center;
-    display: flex;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    position: relative;
-    min-height: 32px;
-}
-
-.visualCheckboxDados {
-    border: 0px;
-    clip: rect(0px, 0px, 0px, 0px);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0px;
-    position: absolute;
-    width: 1px;
-}
-
-.dadosText {
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    padding-left: 12px;
-    padding-right: 24px;
-}
-
-/* Politica */
-
-.emailForm {
-    text-align: center;
-}
-
-.politica {
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    display: block;
-    padding: 0px 0px 1em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.25px;
-}
-
-/* BOTAO DE INSCREVA-SE */
-
 .signupButton {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 24px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
 }
-
 .botaoSubmit {
-    box-sizing: border-box;
-    border: 0px;
-    border-radius: 500px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    touch-action: manipulation;
-    transition-duration: 33ms;
-    user-select: none;
-    vertical-align: middle;
-    padding: 0px;
-    align-self: center;
-    font-weight: 700;
-    transform: scale(1.04);
-    letter-spacing: 0.9px;
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  border: 0px;
+  border-radius: 500px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition-duration: 33ms;
+  user-select: none;
+  vertical-align: middle;
+  padding: 0px;
+  align-self: center;
+  font-weight: 700;
+  transform: scale(1.04);
+  letter-spacing: 0.9px;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
 }
-
-.botaoSubmitInner {
-    background-color: #ff179bc0;
-    border-radius: 500px;
-    font-size: inherit;
-    padding: 16px 48px;
-    cursor: pointer;
-}
-
 .botaoSubmit:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
-
-/* JA TEM LOGIN */
-
+.botaoSubmitInner {
+  background-color: #ff179a;
+  border-radius: 500px;
+  font-size: inherit;
+  padding: 16px 48px;
+  cursor: pointer;
+}
+@media (max-width: 1030px) {
+  body {
+    background-size: 130%;
+  }
+}
+@media (max-width: 960px) {
+  body {
+    background-size: 150%;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    background-size: 170%;
+  }
+}
+@media (max-width: 750px) {
+  body {
+    background-size: 190%;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    background-size: 250%;
+  }
+}
+@media (max-width: 490px) {
+  .signup {
+    max-width: 380px;
+  }
+  body {
+    background-size: 320%;
+  }
+}
+@media (max-width: 420px) {
+  .signup {
+    max-width: 340px;
+  }
+  .botaoFacebook {
+    padding: 10px 15px;
+  }
+  .botaoFacebook span {
+    display: none;
+  }
+  body {
+    background-size: 360%;
+  }
+}
+@media (max-width: 280px) {
+  .signup {
+    max-width: 250px;
+  }
+  body {
+    background-size: 500%;
+  }
+}
+.termos {
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+#termosECondicoes {
+  color: #000;
+}
+#termosECondicoes:hover {
+  color: #ff179a;
+}
+.saibaMais {
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+#politicaDePrivacidade {
+  color: #000;
+}
+#politicaDePrivacidade:hover {
+  color: #ff179a;
+}
+.mensagemMarketing {
+  box-sizing: border-box;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  padding-bottom: 24px;
+}
+.checkbox {
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  position: relative;
+  min-height: 32px;
+}
+.visualCheckboxMarketing {
+  border: 0px;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  width: 1px;
+}
+.marketingText {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding-left: 12px;
+  padding-right: 24px;
+}
+.compartilharDados {
+  box-sizing: border-box;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  padding-bottom: 24px;
+}
+.checkbox {
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  position: relative;
+  min-height: 32px;
+}
+.visualCheckboxDados {
+  border: 0px;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  width: 1px;
+}
+.dadosText {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding-left: 12px;
+  padding-right: 24px;
+}
+.emailForm {
+  text-align: center;
+}
+.politica {
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  display: block;
+  padding: 0px 0px 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+}
+.labelTextGroup {
+  color: black;
+  font-family: "CircularSpotifyTxT-Black" !important;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding-bottom: 8px;
+}
+.inputGroup {
+  border: 1px solid #ff179a;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 90%;
+  padding: 14px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+}
+.formGroup {
+  box-sizing: border-box;
+  padding-bottom: 24px;
+}
+.labelTextDisplayName {
+  color: #181818;
+  font-family: "CircularSpotifyTxT-Black" !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding-top: 8px;
+}
+.dataDeNascimento {
+  display: flex;
+  justify-content: space-between;
+}
+.containerDia {
+  width: 20%;
+}
+#dia {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  border: 1px solid #ff179a;
+  padding: 14px;
+  color: #000;
+}
+.containerMes {
+  width: 45%;
+}
+.selectionContainerMes {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.selectionMes {
+  display: block;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  appearance: none;
+  text-indent: 0.01px;
+  border-radius: 4px;
+  padding: 14px 44px 14px 14px;
+  border: 1px solid #ff179a;
+  background-color: #fff;
+}
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+option:disabled {
+  color: #ff179a;
+}
+.svgMes {
+  color: #ff179a;
+  pointer-events: none;
+  position: absolute;
+  right: 14px;
+}
+.containerAno {
+  width: 25%;
+}
+#ano {
+  border: 0px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 50%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  padding: 14px;
+  border: 1px solid #ff179a;
+}
+.generoContainerGroup {
+  box-sizing: border-box;
+  padding: 0px 0px 24px;
+  min-width: 0px;
+  margin: 0px;
+  border: 0px;
+}
+.legendText {
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  width: 100%;
+  padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.generoOpcoes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.generoContainer {
+  box-sizing: border-box;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  align-items: center;
+  display: flex;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  position: relative;
+  min-height: 32px;
+}
+.generoText {
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 12px;
+  padding-right: 24px;
+}
 .linkLoginContainer {
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0px;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
 }
-
 .linkLoginContainer a {
-    color: #000;
+  color: #000;
 }
-
 .linkLoginContainer a:hover {
-    color: #ff179bc0;
+  color: #ff179a;
 }
