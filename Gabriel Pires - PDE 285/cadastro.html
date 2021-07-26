@@ -1,109 +1,126 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
-        <title>Inscrever-se | Gabriel</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+
+<head>
+    <title>Inscrever-se | Gabriel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <header>
         <img src="spotify.svg" alt="logo do Spotify">
         <h1>Inscreva-se grátis e comece a curtir :)</h1>
     </header>
     <main>
         <button class="botaoIni" type="button"><img src="face.svg">Inscrever-se com o Facebook</button>
-        <label class="termos"><input type="checkbox"> Eu concordo com os <a href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de uso do Spotify.</a></input>
+        <label class="termos"><input type="checkbox"> Eu concordo com os <a
+                href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de uso do
+                Spotify.</a></input>
         </label>
-        <p class="termos">Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify</a>.</p>
+        <p class="termos">Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados
+            pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do
+                Spotify</a>.</p>
         <div class="ou">
             <hr>
             <p>ou</p>
             <hr>
         </div>
         <div class="larguraForm">
-        <form class="parte1">
-            <label for="email">Qual é o seu email? </label>
-            <input id="email" type="text" placeholder="Insira seu email. " required>
-            <a class="tel" href="https://accounts.spotify.com/pt-BR/login?method=phone&continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F&intent=signup&_ga=2.151115833.1893192828.1626886585-1579934561.1625759551">Usar número de telefone.</a>
-            
-            <label for="confirmaEmail">Confirme seu email.  </label>
-            <input id="confirmaEmail" type="text" placeholder="Insira seu email novamente." required>
+            <form class="parte1">
+                <label for="email">Qual é o seu email? </label>
+                <input id="email" type="text" placeholder="Insira seu email. " required>
+                <a class="tel"
+                    href="https://accounts.spotify.com/pt-BR/login?method=phone&continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F&intent=signup&_ga=2.151115833.1893192828.1626886585-1579934561.1625759551">Usar
+                    número de telefone.</a>
 
-            <label for="Senha">Crie uma senha  </label>
-            <input id="Senha" type="password" placeholder="Crie uma senha." required>
+                <label for="confirmaEmail">Confirme seu email. </label>
+                <input id="confirmaEmail" type="text" placeholder="Insira seu email novamente." required>
 
-            <label for="apelido">Como devemos chamar você?  </label>
-            <input id="apelido" type="text" placeholder="Insira um nome de perfil." required>
-            <p id=disc>Isso será exibido no seu perfil. </p>
+                <label for="Senha">Crie uma senha </label>
+                <input id="Senha" type="password" placeholder="Crie uma senha." required>
 
-            <p id="nasc">Qual é sua data de nascimento? </p>
+                <label for="apelido">Como devemos chamar você? </label>
+                <input id="apelido" type="text" placeholder="Insira um nome de perfil." required>
+                <p id=disc>Isso será exibido no seu perfil. </p>
+
+                <p id="nasc">Qual é sua data de nascimento? </p>
                 <fieldset>
-                <div class="diaS">
-                <label for="dia">Dia</label>
-                <input id="dia" type="text" placeholder="DD" required>
+                    <div class="diaS">
+                        <label for="dia">Dia</label>
+                        <input id="dia" type="text" placeholder="DD" required>
+                    </div>
+
+                    <div class="mesS">
+                        <label for="mes">Mês</label>
+                        <select id="mes" name="mes" required>
+                            <option>Mês</option>
+                            <option>Janeiro</option>
+                            <option>Fevereiro</option>
+                            <option>Março</option>
+                            <option>Abril</option>
+                            <option>Maio</option>
+                            <option>Junho</option>
+                            <option>Julho</option>
+                            <option>Agosto</option>
+                            <option>Setembro</option>
+                            <option>Outubro</option>
+                            <option>Novembro</option>
+                            <option>Dezembro</option>
+                        </select>
+                    </div>
+
+                    <div class="anosS">
+                        <label for="ano">Ano</label>
+                        <input id="ano" type="text" placeholder="Ano" required>
+                    </div>
+                </fieldset>
+                <p id="genre">Qual é o seu gênero? </p>
+                <div class="divGenero">
+
+                    <input name="genero" id="masc" type="radio">
+                    <label for="masc">Masculino</label>
+
+
+                    <input name="genero" id="fem" type="radio">
+                    <label for="fem">Feminino</label>
+
+
+                    <input name="genero" id="nb" type="radio">
+                    <label for="nb">Não binário</label>
                 </div>
 
-                <div class="mesS">
-                <label for="mes">Mês</label>
-                <select id="mes" name="mes" required>
-                <option>Mês</option>
-                <option>Janeiro</option>
-                <option>Fevereiro</option>
-                <option>Março</option>
-                <option>Abril</option>
-                <option>Maio</option>
-                <option>Junho</option>
-                <option>Julho</option>
-                <option>Agosto</option>
-                <option>Setembro</option>
-                <option>Outubro</option>
-                <option>Novembro</option>
-                <option>Dezembro</option>
-                </select>
+                <div class="blocofinal">
+                    <div class="marginTop"></div>
+                    <label class="termosRodape"><input class="ipt" type="checkbox">Não quero receber mensagens de
+                        marketing do Spotify</input>
+                        <div class="marginTop"></div>
+                        <label class="termosRodape"><input class="ipt" type="checkbox">Compartilhar meus dados
+                            cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</input>
+                            <div class="marginTop"></div>
+                            <label class="termosRodape"><input class="ipt" type="checkbox">Eu concordo com os <a
+                                    href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de
+                                    uso do Spotify.</a></input>
                 </div>
-                
-                <div class="anosS">
-                <label for="ano">Ano</label>
-                <input id="ano" type="text" placeholder="Ano" required>
-                </div>                 
-            </fieldset>
-            <p id="genre">Qual é o seu gênero? </p>
-            <div class="divGenero">
-            
-                <input name="genero" id="masc" type="radio">
-                <label for="masc">Masculino</label>
-    
-    
-                <input name="genero" id="fem" type="radio">
-                <label for="fem">Feminino</label>
-    
-    
-                <input name="genero" id="nb" type="radio">
-                <label for="nb">Não binário</label>
-            </div>
-
-            <div class="blocofinal">
-            <div class="marginTop"></div>
-            <label class="termosRodape"><input class="ipt" type="checkbox">Não quero receber mensagens de marketing do Spotify</input>
-            <div class="marginTop"></div>
-            <label class="termosRodape"><input class="ipt" type="checkbox">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</input>
-            <div class="marginTop"></div>
-            <label class="termosRodape"><input class="ipt" type="checkbox">Eu concordo com os <a href="https://www.spotify.com/br/legal/end-user-agreement/">Termos e Condições de uso do Spotify.</a></input>
-            </div> 
-            <p id="termosEnd">Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade do Spotify</a>.</p>
-            <button  class="botaoFim" type="button">Inscrever-se</button>
-            <p id="termosEnd">Já tem uma conta?<a id ="ultimoA" href="https://accounts.spotify.com/login/?continue=https%3A%2F%2Fopen.spotify.com%2F%3Fl2l%3D1">Faça login</a>.</p>    
-        </form>
-        <div class="respiro"></div>
-    </div>
+                <p id="termosEnd">Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados
+                    pessoais, leia a <a href="https://www.spotify.com/br/legal/privacy-policy/">Política de Privacidade
+                        do Spotify</a>.</p>
+                <button class="botaoFim" type="button">Inscrever-se</button>
+                <p id="termosEnd">Já tem uma conta?<a id="ultimoA"
+                        href="https://accounts.spotify.com/login/?continue=https%3A%2F%2Fopen.spotify.com%2F%3Fl2l%3D1">Faça
+                        login</a>.</p>
+            </form>
+            <div class="respiro"></div>
+        </div>
 
 
     </main>
     <footer>
-    <div class="circuloEstilo" id="circulo1"></div>
-    <div class="circuloEstilo" id="circulo2"></div>
+        <div class="circuloEstilo" id="circulo1"></div>
+        <div class="circuloEstilo" id="circulo2"></div>
 
     </footer>
 </body>
+
 </html>
