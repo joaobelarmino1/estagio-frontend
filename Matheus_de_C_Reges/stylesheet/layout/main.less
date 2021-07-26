@@ -4,6 +4,7 @@
 }
 
 .button {
+    
     border-style: none;
     background-color: white;
     border: none;
@@ -12,27 +13,36 @@
     max-width: 80%;
     margin: 0 5px;
     cursor:pointer;
+    border-radius: 50%;
+}
+
+.button img{
+    border-radius: 50%;
+    transition: transform 0.5s;
 }
 
 .button img:hover {
     box-shadow: @sombra-padrao-sociais;
-    transform: scale(1.1);
+    transform: scale(1.21);
     background-color: @cor-padrao-facebook-hover;
     opacity: 0.9;
 }
 
 #button-facebook img {
+    
     background-color: @cor-padrao-facebook;
-    border-radius: 50%;
+    
 }
 
 #button-instagram img {
+    
     background-color: @cor-padrao-facebook;
-    border-radius: 50%;
+    
 }
 #button-gmail img {
+    
     background-color: @cor-padrao-gmail;
-    border-radius: 50%;
+    
 }
 
 

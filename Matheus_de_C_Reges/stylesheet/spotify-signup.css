@@ -402,24 +402,26 @@ body {
   max-width: 80%;
   margin: 0 5px;
   cursor: pointer;
+  border-radius: 50%;
+}
+.button img {
+  border-radius: 50%;
+  transition: transform 0.5s;
 }
 .button img:hover {
   box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.267);
-  transform: scale(1.1);
+  transform: scale(1.21);
   background-color: #1979f7;
   opacity: 0.9;
 }
 #button-facebook img {
   background-color: #2982f7;
-  border-radius: 50%;
 }
 #button-instagram img {
   background-color: #2982f7;
-  border-radius: 50%;
 }
 #button-gmail img {
   background-color: #D44638;
-  border-radius: 50%;
 }
 form {
   box-sizing: border-box;
