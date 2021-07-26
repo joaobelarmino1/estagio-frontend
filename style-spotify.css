@@ -1,138 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-    
 fieldset {
-    border: none;
+  border: none;
 }
-
-
 header {
-    text-align: center;
-    align-items: center;    
-    background: url(miley4.jpg);
-    background-size: cover;
-    margin: auto;
+  text-align: center;
+  align-items: center;
+  background: url(miley4.jpg);
+  background-size: cover;
+  margin: auto;
 }
-
 main {
-    width: 940px;
-    margin: 0 auto;
-
+  width: 940px;
+  margin: 0 auto;
 }
-
 div {
-    text-align: center;
-  }
-
+  text-align: center;
+}
 .logo {
-    width: 15%;
+  width: 15%;
 }
-
 .Frase {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    font-weight: bold;}
-
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
 .subfrase {
-    font-weight: bold;
-    color: black
+  font-weight: bold;
+  color: #000000;
 }
-
 .enviar {
-    width: 4%;
-    padding: none;
-    background: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    margin-bottom: 2%;
-    margin-top: 1%;
+  width: 4%;
+  padding: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  margin-bottom: 2%;
+  margin-top: 1%;
 }
-
 .enviar:hover {
-    transform: scale(1.2);
-    background: none;
-    opacity: 0.5;
-
+  transform: scale(1.2);
+  background: none;
+  opacity: 0.5;
 }
-
 .checkbox {
-    margin-top: auto;
-    font-weight: bold;
+  margin-top: auto;
+  font-weight: bold;
 }
-
 form {
-    margin: 20px 0;
-    color: black;
-    border: black;
+  margin: 20px 0;
+  color: #000000;
+  border: #000000;
+  border-radius: 50%;
 }
-
-
-form label, form legend {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 95%;
-    text-align: center;
-    border: black;
-    font-weight: bold;
-    margin-left: 2%;
+form label,
+form legend {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 95%;
+  text-align: center;
+  border: #000000;
+  font-weight: bold;
+  margin-left: 2%;
 }
-
 .input-padrao {
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 30%;
-    text-align: center;
-    border: none;
-    font-weight: bold;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 30%;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  border-radius: 50px;
+  border-color: cornsilk;
 }
-
 label {
-    display: block;
+  display: block;
 }
-
 .sex {
-    display: contents;
-    padding: 2%;
-    margin-bottom: 5%;
-    font-weight: bold;
+  display: contents;
+  padding: 2%;
+  margin-bottom: 5%;
+  font-weight: bold;
 }
-
 .final {
-
-    width: 30%;
-    padding: 15px 0;
-    background: rgb(63, 224, 63);
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 50px;
-    transition: 1s all;
-    margin-bottom: 2%;
-    font-weight: bold;
-    margin-top: 1%;
-
+  width: 30%;
+  padding: 15px 0;
+  background: #3fe03f;
+  color: #000000;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  transition: 1s all;
+  margin-bottom: 2%;
+  font-weight: bold;
+  margin-top: 1%;
 }
-
 .final:hover {
-    transform: scale(1.2);
-    opacity: 0.9;
-
+  transform: scale(1.2);
+  opacity: 0.9;
 }
-
 a {
-    color: rgb(14, 82, 14);
+  color: #0e520e;
 }
-
 a:hover {
-    color: rgb(95, 175, 14);
+  color: #5faf0e;
 }
