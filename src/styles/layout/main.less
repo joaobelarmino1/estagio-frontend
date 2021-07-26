@@ -1,0 +1,137 @@
+.divisoria {
+  display: table;
+  line-height: 24px;
+  letter-spacing: 2px;
+  position: relative;
+  width: 85%;
+  text-align: center;
+  color: @branco-padrao;
+  font-weight: 500;
+  margin-top: 15px;
+  font-size: 18px;
+
+  &::before,
+  &::after {
+    border-top: 1px solid @branco-padrao;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    margin-top: 15px;
+    .fonte-spotify;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.input-texto {
+  padding: 18px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  color: @preto-padrao;
+  outline-color: @verde-escuro;
+  .sombra-padrao;
+}
+
+fieldset {
+  margin-top: 25px;
+  border: none;
+  display: flex;
+  width: 100%;
+}
+
+legend {
+  .fonte-spotify;
+}
+
+.campo-data {
+  justify-content: space-between;
+}
+
+.data-nascimento {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+
+  .dia,
+  .data-nascimento .ano {
+    width: 100%;
+  }
+}
+
+.mes {
+  width: 200px;
+
+  select {
+    background-color: @branco-padrao;
+    color: @preto-padrao;
+  }
+}
+
+option {
+  color: @preto-padrao;
+}
+
+input[type="radio"] {
+  transform: scale(1.3);
+}
+
+.campo-genero {
+  div {
+    margin: 15px 25px 15px 0px;
+  }
+}
+
+.checkbox-termos {
+  flex-direction: column;
+
+  input {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+.para-saber-mais {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.enviar {
+  width: 50%;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 20px;
+  margin: 15px auto;
+  background-color: @verde-escuro;
+  color: @branco-padrao;
+  .fonte-spotify;
+  cursor: pointer;
+  transition: 0.4s;
+  .sombra-padrao;
+
+  &:hover {
+    background-color: darken(@verde-escuro, 10);
+  }
+}
+
+.login {
+  text-align: center;
+  margin-bottom: 200px;
+}
