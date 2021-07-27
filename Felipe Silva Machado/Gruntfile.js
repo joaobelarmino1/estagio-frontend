@@ -5,13 +5,13 @@ module.exports = function(grunt) {
     less: {
       development: {
         files: {
-          "style/cadastro.css": "style/cadastro.less" // Caminho dos arquivos
+          "style/cadastro.css": "style/cadastro.less"
         }
       }
     },
     watch: {
       styles: {
-        files: ['**/*.less'], // Quais arquivos o grunt ficará de olho
+        files: ['**/*.less'],
         tasks: ['less']
       }
     }
