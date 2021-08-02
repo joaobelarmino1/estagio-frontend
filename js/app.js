@@ -17,7 +17,11 @@ function navSlide() {
         }
     });
 
-    
+    darkenBackground.addEventListener('click', function (){
+        nav.classList.remove('nav-active');
+        darkenBackground.classList.add('disabled');
+        burguer.classList.toggle('toggle');
+    })
 
 
 
