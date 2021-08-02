@@ -1,3 +1,7 @@
+@font-face {
+  font-family: spotify;
+  src: url("../fonts/CircularSpotifyTxT-Black.ttf");
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,6 +140,7 @@ table {
 body {
   background-color: #F7F7F7;
   color: #101820;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   width: 100%;
@@ -173,12 +178,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1101px) {
   .vantagens .vantagens__itens {
     width: 1100px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .vantagens .vantagens__itens {
     width: 90%;
     justify-content: space-around;
@@ -273,6 +278,7 @@ body {
   margin: 0 auto;
 }
 .vantagens .vantagens__item-img img {
+  z-index: -10;
   width: 100%;
 }
 @media screen and (max-width: 500px) {
@@ -292,8 +298,9 @@ body {
   opacity: 100;
 }
 .escolha__plano {
+  box-sizing: border-box;
+  overflow-y: hidden;
   background-color: #efefef;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,25 +308,41 @@ body {
 }
 .escolha__plano h2 {
   font-size: 32px;
-  font-weight: 700;
   text-align: center;
   font-family: Roboto, sans-serif;
+  margin-top: 4rem;
+  margin-bottom: 0.8rem;
 }
 .escolha__plano p {
   font-size: 16px;
+  font-weight: bold;
   text-align: center;
   font-family: Roboto, sans-serif;
+  margin-bottom: 0.9rem;
+  padding: 0 0.5rem;
+  margin-top: 0.9rem;
+}
+@media screen and (min-width: 375px) {
+  .escolha__plano p {
+    padding: 0 2rem;
+  }
 }
 .escolha__plano .link_a {
   text-align: left;
   font-family: Roboto, sans-serif;
+  font-size: 1rem;
   color: black;
   text-decoration: underline;
 }
 .escolha__plano .link_a:visited {
   color: black;
 }
+.escolha__plano .link_a:hover {
+  cursor: pointer;
+}
 .escolha__plano .figuras__link {
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
   display: flex;
   align-items: center;
   padding: 5px 5px;
@@ -334,8 +357,17 @@ body {
 }
 .escolha__plano .figura__bandeira {
   margin: 0 0.2rem;
-  width: 29px;
-  height: 20px;
+  width: 19px;
+}
+@media screen and (min-width: 425px) {
+  .escolha__plano .figura__bandeira {
+    width: 23px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .escolha__plano .figura__bandeira {
+    width: 29px;
+  }
 }
 #plans__box {
   display: flex;
@@ -363,7 +395,7 @@ body {
   flex-direction: column;
   width: 90%;
   max-width: 450px;
-  margin: 1.3rem 0.5rem;
+  margin: 0.8rem 0.5rem;
   background-color: #FFF;
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.199);
   padding: 1.3rem;
@@ -538,4 +570,272 @@ body {
 }
 .plans__terms a {
   color: #222326;
+}
+.banner {
+  background-color: #BF0032;
+  height: 350px;
+  padding: 3%;
+}
+.frase {
+  font-size: 2rem;
+  text-transform: bold;
+  color: #F7F7F7;
+  font-family: 'Circular Spotify Tx T Black';
+}
+.subfrase {
+  font-size: 20px;
+  color: #F7F7F7;
+  font-family: "roboto";
+  margin-top: 1%;
+}
+.termo {
+  font-size: 15px;
+  color: #F7F7F7;
+  margin-top: 2%;
+  font-family: "roboto";
+}
+.termo1 {
+  color: #101820;
+}
+.botao-banner {
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  background-color: #101820;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  margin-top: 3%;
+  border: none;
+  font-family: 'Circular Spotify Tx T Black';
+}
+.botao-banner2 {
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  margin-top: 2%;
+  border: transparent;
+  font-family: 'Circular Spotify Tx T Black';
+}
+.botao-banner2:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  background-color: #101820;
+  text-transform: bold;
+}
+.botao-banner:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+@media screen and (min-width: 610px) {
+  .banner {
+    background-color: #BF0032;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner {
+    background-color: #BF0032;
+  }
+  .frase,
+  .subfrase {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .botao-banner {
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  .botao-banner2 {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-width: 425px) {
+  .banner {
+    background-color: #BF0032;
+  }
+}
+@media screen and (max-width: 425px) {
+  .banner {
+    background-color: #BF0032;
+  }
+  .frase,
+  .subfrase {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .botao-banner {
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  .botao-banner2 {
+    margin-left: 20%;
+  }
+}
+footer {
+  background-color: #002C4F;
+  color: #F7F7F7;
+  padding: 80px 0 50px;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #F7F7F7;
+}
+footer a:hover {
+  color: #00A8A9;
+}
+.footer-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.logo {
+  padding: 0 15px;
+  width: 15%;
+}
+.logo-spotify {
+  width: 130px;
+}
+.links-footer {
+  width: 50%;
+  display: flex;
+}
+.links-footer ul {
+  flex: 1 0;
+  padding: 0 15px;
+  margin: 0;
+}
+.links-title {
+  font-weight: 900;
+  color: #97b1cb;
+  font-size: 12px;
+  margin: 20px 0;
+  letter-spacing: 0.08em;
+}
+.links-footer ul li a {
+  display: block;
+  padding: 3px 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.social-midias {
+  margin: 0 15px 0 auto;
+}
+.social-midias ul {
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+}
+.social-midias li {
+  margin-right: 15px;
+}
+.social-midias a {
+  width: 50px;
+  height: 50px;
+  background-color: #97b1cb;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.country {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 15px;
+  font-size: 12px;
+}
+.country a {
+  color: #97b1cb;
+}
+.country a:hover {
+  color: #00A8A9;
+}
+.bottom-links {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.bottom-links ul {
+  display: flex;
+  margin: 0 45px 0 0;
+  padding: 0 0 0 15px;
+}
+.bottom-links li a {
+  display: block;
+  margin-right: 24px;
+  padding: 1em 0;
+  font-size: 12px;
+  color: #97b1cb;
+}
+.bottom-links li a:hover {
+  color: #00A8A9;
+}
+.bottom-links span {
+  margin: 0 15px 0 auto;
+  padding: 1em 0;
+  font-size: 12px;
+  color: #97b1cb;
+}
+@media screen and (min-width: 1201px) {
+  .logo {
+    min-height: 346px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer-box {
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: 980px) {
+  footer {
+    padding: 50px 0 20px;
+  }
+  .footer-box {
+    max-width: 750px;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+  }
+  .logo-spotify {
+    width: 90px;
+  }
+  .links-footer {
+    width: 100%;
+  }
+  .links-title {
+    margin: 50px 0 22px;
+  }
+  .social-midias {
+    margin: 120px 15px 15px;
+    width: 100%;
+  }
+  .country {
+    font-size: 10px;
+  }
+  .bottom-links {
+    align-items: start;
+  }
+  .bottom-links ul {
+    flex-wrap: wrap;
+  }
+  .bottom-links ul a {
+    font-size: 10px;
+  }
+  .bottom-links span {
+    flex-shrink: 0;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .links-footer {
+    display: block;
+  }
 }
