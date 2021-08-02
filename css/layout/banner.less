@@ -101,16 +101,35 @@
     }
 }
 
-@media screen and (min-width: 610px){
-   .banner{
-     background-color: @cor-destaque;
-   }
+@media screen and (max-width: 440px){
+    .banner {
+        height: 460px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .termo{
+        margin: 0 auto;
+    }
+    .frase, .subfrase {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .botao-banner {
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+
+    .botao-banner2{
+        margin-left: 20%;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
     .banner {
-        background-color: @preto-padrao;
-        height: 320px;
+        height: 340px;
        
     }
 
@@ -141,9 +160,8 @@
 
 
 
-@media screen and (min-width: 325px) {
+@media screen and (max-width: 325px) {
     .banner {
-        background-color: @preto-padrao;
         height: 360px;
         
     }
@@ -159,24 +177,4 @@
 
 
 
-@media screen and (max-width: 425px) {
-    .banner {
-        background-color: @preto-padrao;
-       
-    }
-    
-    .frase, .subfrase {
-        text-align: center;
-        margin-top: 5%;
-    }
 
-    .botao-banner {
-        margin-left: 20%;
-        margin-top: 8%;
-    }
-
-    .botao-banner2{
-        margin-left: 20%;
-    }
-
-}

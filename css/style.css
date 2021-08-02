@@ -150,7 +150,6 @@ body {
   align-items: center;
 }
 body {
-  font-family: 'Circular Spotify Tx T Black';
   overflow-x: hidden;
   position: relative;
 }
@@ -269,7 +268,7 @@ li.logo {
     display: block !important;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   header {
     height: 4rem;
   }
@@ -548,6 +547,7 @@ li.logo {
 }
 @media only screen and (min-width: 1200px) {
   .plans__card {
+    margin: 0.8rem 0.5rem 6rem 0.5rem;
     height: 890px;
     max-width: 280px;
   }
@@ -777,15 +777,13 @@ li.logo {
   cursor: pointer;
 }
 .botao-banner2:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   opacity: 0.5;
   background-color: #101820;
   text-transform: bold;
 }
 .botao-banner:hover {
   transform: scale(1.1);
-  transition: background-color 0.5s ease, transform 0.5s;
-  background-color: #BF0032;
   opacity: 0.9;
 }
 @media screen and (max-width: 767px) {
@@ -794,15 +792,31 @@ li.logo {
     background-image: none;
   }
 }
-@media screen and (min-width: 610px) {
+@media screen and (max-width: 440px) {
   .banner {
-    background-color: #002C4F;
+    height: 460px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .termo {
+    margin: 0 auto;
+  }
+  .frase,
+  .subfrase {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .botao-banner {
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  .botao-banner2 {
+    margin-left: 20%;
   }
 }
 @media screen and (max-width: 375px) {
   .banner {
-    background-color: #101820;
-    height: 320px;
+    height: 340px;
   }
   .frase,
   .subfrase {
@@ -823,32 +837,14 @@ li.logo {
     margin-left: 20%;
   }
 }
-@media screen and (min-width: 325px) {
+@media screen and (max-width: 325px) {
   .banner {
-    background-color: #101820;
     height: 360px;
   }
   .termo {
     font-size: 10px;
     max-width: 80%;
     line-height: 12px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .banner {
-    background-color: #101820;
-  }
-  .frase,
-  .subfrase {
-    text-align: center;
-    margin-top: 5%;
-  }
-  .botao-banner {
-    margin-left: 20%;
-    margin-top: 8%;
-  }
-  .botao-banner2 {
-    margin-left: 20%;
   }
 }
 footer {
