@@ -1,7 +1,25 @@
+body.scroll-disabled{
+    overflow:hidden;
+}
+
+.darken-background{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.darken-background.disabled{
+    display: none;
+}
+
+
 header {
     background-color: black;
     height: 5rem;
     display: flex;
+    z-index: 5;
 
     nav {
         width: 100%;
@@ -9,6 +27,7 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 0 4rem;
+        font-family: @spotify;
 
         p {
             color: white;
@@ -22,7 +41,20 @@ header {
                 color: rgb(255, 255, 255);
                 list-style-type: none;
                 margin: 0 10px;
-                font-size: 18px;
+                
+                cursor: pointer;
+
+                &:nth-last-child(-n+3){
+                    color: rgb(214, 214, 214);
+                    font-family: sans-serif;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    color: rgb(21, 199, 21);
+                }
+
+        
             }
         }
 
@@ -41,14 +73,27 @@ header {
     }
 }
 
-@media screen and (min-width: 1024px){
-    nav img{
+li.logo{
+    position:absolute;
+    bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    nav img {
         width: 100px;
+    }
+
+    li.logo{
+        display: none;
+    }
+
+    .horizontal{
+        display: none;
     }
 }
 
-@media screen and (max-width: 1024px){
-    body{
+@media screen and (max-width: 1024px) {
+    body {
         overflow-x: hidden;
     }
 
@@ -56,56 +101,61 @@ header {
         height: 3rem;
     }
 
-    nav img{
+    nav img {
         width: 80px;
     }
 
-    .nav-links{
+    .nav-links {
         position: absolute;
         right: 0px;
         height: 100%;
         top: 4vh;
         flex-direction: column;
-
         background-color: black;
         margin-top: 0;
         width: 40%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        padding-left: 1rem;
 
-        p.vertical{
+        p.vertical {
             display: none;
         }
 
-        p.horizontal{
-            margin-bottom: 2rem;
+        p.horizontal {
+            margin-bottom: 2.5rem;
         }
 
-        li{
-            font-size: 26px;
+        li {
             opacity: 1;
             margin-bottom: 2rem;
+            font-size: 32px;
+
+            &:nth-last-child(-n+3){
+                font-size: 24px;
+            }
+
+           
         }
     }
 
-    .burguer{
+    .burguer {
         display: block !important;
     }
 }
 
-.nav-active{
+.nav-active {
     transform: translateX(0%);
 }
 
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggle .line2{
+.toggle .line2 {
     opacity: 0;
 }
 
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
-
