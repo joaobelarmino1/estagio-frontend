@@ -315,7 +315,7 @@ template {
 @media only screen and (min-width: 1200px) {
   #plans__box {
     flex-direction: row;
-    padding: 0 9rem;
+    padding: 0 8rem;
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -413,6 +413,11 @@ template {
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
+@media only screen and (min-width: 1200px) {
+  .plans__maximum-accounts--university {
+    padding-bottom: 41px;
+  }
+}
 .plans__hr {
   height: 1.1px;
   width: 94%;
@@ -458,10 +463,12 @@ template {
 }
 .plans__button {
   width: 180px;
-  max-width: 80%;
+  max-width: 35%;
   padding: 1rem 1.75rem;
   margin: 0.4rem 0;
   border: none;
+  text-align: center;
+  text-decoration: none;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   color: #F7F7F7;
