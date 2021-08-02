@@ -499,6 +499,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 1.4;
 }
 @media only screen and (min-width: 1200px) {
   .plans__benefits-box {
@@ -567,6 +568,7 @@ body {
   font-weight: 300;
   font-size: 0.78rem;
   color: #222326;
+  line-height: 1.32;
 }
 .plans__terms a {
   color: #222326;
@@ -715,7 +717,7 @@ footer a:hover {
   color: #97b1cb;
   font-size: 12px;
   margin: 20px 0;
-  letter-spacing: 0.08em;
+  letter-spacing: .08em;
 }
 .links-footer ul li a {
   display: block;
