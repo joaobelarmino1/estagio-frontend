@@ -150,7 +150,6 @@ body {
   align-items: center;
 }
 body {
-  font-family: 'Circular Spotify Tx T Black';
   overflow-x: hidden;
   position: relative;
 }
@@ -548,6 +547,7 @@ li.logo {
 }
 @media only screen and (min-width: 1200px) {
   .plans__card {
+    margin: 0.8rem 0.5rem 6rem 0.5rem;
     height: 890px;
     max-width: 280px;
   }
@@ -711,7 +711,7 @@ li.logo {
   color: #222326;
 }
 .banner {
-  background-color: #002C4F;
+  background-color: #BF0032;
   height: 350px;
   padding: 3%;
 }
@@ -734,7 +734,7 @@ li.logo {
   font-family: "roboto";
 }
 .termo1 {
-  color: #F7F7F7;
+  color: #101820;
 }
 .botao-banner {
   border-radius: 50px;
@@ -759,25 +759,23 @@ li.logo {
   font-family: 'Circular Spotify Tx T Black';
 }
 .botao-banner2:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   opacity: 0.5;
   background-color: #101820;
   text-transform: bold;
 }
 .botao-banner:hover {
   transform: scale(1.1);
-  transition: background-color 0.5s ease, transform 0.5s;
-  background-color: #BF0032;
   opacity: 0.9;
 }
 @media screen and (min-width: 610px) {
   .banner {
-    background-color: #002C4F;
+    background-color: #BF0032;
   }
 }
 @media screen and (max-width: 375px) {
   .banner {
-    background-color: #002C4F;
+    background-color: #BF0032;
   }
   .frase,
   .subfrase {
@@ -794,12 +792,12 @@ li.logo {
 }
 @media screen and (min-width: 425px) {
   .banner {
-    background-color: #002C4F;
+    background-color: #BF0032;
   }
 }
 @media screen and (max-width: 425px) {
   .banner {
-    background-color: #002C4F;
+    background-color: #BF0032;
   }
   .frase,
   .subfrase {
