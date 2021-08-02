@@ -151,7 +151,7 @@ body {
 }
 .banner {
   background-color: #BF0032;
-  height: 350px;
+  height: 280px;
   padding: 3%;
 }
 .frase {
@@ -159,12 +159,13 @@ body {
   text-transform: bold;
   color: #F7F7F7;
   font-family: 'Circular Spotify Tx T Black';
+  margin-top: 2%;
 }
 .subfrase {
   font-size: 20px;
   color: #F7F7F7;
   font-family: "roboto";
-  margin-top: 1%;
+  margin-top: 2%;
 }
 .termo {
   font-size: 15px;
@@ -173,16 +174,16 @@ body {
   font-family: "roboto";
 }
 .termo1 {
-  color: #101820;
+  color: #002C4F;
 }
 .botao-banner {
   border-radius: 50px;
   height: 40px;
   width: 200px;
-  background-color: #101820;
+  background-color: #002C4F;
   text-transform: uppercase;
   color: #F7F7F7;
-  margin-top: 3%;
+  margin-top: 5%;
   border: none;
   font-family: 'Circular Spotify Tx T Black';
 }
@@ -220,6 +221,9 @@ body {
   .subfrase {
     text-align: center;
     margin-top: 5%;
+  }
+  .termo {
+    font-size: 2px;
   }
   .botao-banner {
     margin-left: 20%;
