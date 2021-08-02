@@ -303,11 +303,6 @@ template {
 [hidden] {
   display: none;
 }
-*,
-html,
-body {
-  overflow: auto;
-}
 @media (max-width: 375px) {
   *,
   html,
@@ -325,6 +320,81 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.banner {
+  background-color: #BF0032;
+  height: 350px;
+  padding: 3%;
+}
+.frase {
+  text-size-adjust: 1%;
+  text-transform: bold;
+  color: #F7F7F7;
+}
+.subfrase {
+  font-size: 20px;
+  color: #F7F7F7;
+}
+.termo {
+  color: #F7F7F7;
+}
+.termo1 {
+  color: #101820;
+}
+.botao-banner {
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  background-color: #101820;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  margin-top: 2%;
+  border: none;
+}
+.botao-banner2 {
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  margin-top: 2%;
+  border: transparent;
+}
+.botao-banner2:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  background-color: #101820;
+  text-transform: bold;
+}
+.botao-banner:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+@media screen and (min-width: 610px) {
+  .banner {
+    background-color: #BF0032;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner {
+    background-color: #BF0032;
+  }
+  .frase,
+  .subfrase {
+    text-align: center;
+  }
+  .botao-banner {
+    margin-left: 20%;
+  }
+  .botao-banner2 {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+    background-color: #BF0032;
+  }
 }
 .vantagens {
   margin: 4rem auto;
