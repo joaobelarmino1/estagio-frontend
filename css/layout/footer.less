@@ -1,0 +1,192 @@
+footer {
+    background-color: @azul-escuro;
+    color: @branco-padrao;
+    padding: 80px 0 50px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: @branco-padrao;
+}
+
+footer a:hover {
+    color: @verde-claro;
+}
+
+.footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.logo {
+    padding: 0 15px;
+    width: 15%;
+}
+
+.logo-spotify {
+    width: 130px;
+}
+
+.links-footer {
+    width: 50%;
+    display: flex;
+}
+
+.links-footer ul {
+    flex: 1 0;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.links-title {
+    font-weight: 900;
+    color: lighten(@preto-padrao, 60);
+    font-size: 12px;
+    margin: 20px 0;
+    letter-spacing: .08em;
+}
+
+.links-footer ul li a {
+    display: block;
+    padding: 3px 0 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.social-midias {
+    margin: 0 15px 0 auto;
+}
+.social-midias ul {
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.social-midias li {
+    margin-right: 15px;
+}
+
+.social-midias a {
+    width: 50px;
+    height: 50px;
+    background-color: lighten(@preto-padrao, 60);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.country {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 15px;
+    font-size: 12px;
+}
+
+.country a {
+    color: lighten(@preto-padrao, 60);
+}
+
+.country a:hover {
+    color: @verde-claro;
+}
+
+.bottom-links {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.bottom-links ul{
+    display: flex;
+    margin: 0 45px 0 0;
+    padding: 0 0 0 15px;
+}
+
+.bottom-links li a {
+    display: block;
+    margin-right: 24px;
+    padding: 1em 0;
+    font-size: 12px;
+    color: lighten(@preto-padrao, 60);
+}
+
+.bottom-links li a:hover {
+    color: @verde-claro;
+}
+
+.bottom-links span {
+    margin: 0 15px 0 auto;
+    padding: 1em 0;
+    font-size: 12px;
+    color: lighten(@preto-padrao, 60);
+}
+
+ 
+@media screen and (min-width: 1201px) {
+    .logo {
+        min-height: 346px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-box {
+        max-width: 970px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    footer {
+        padding: 50px 0 20px;
+    }
+    .footer-box {
+        max-width: 750px;
+    }
+    .logo {
+        display: block;
+        width: 100%;
+    }
+    .logo-spotify {
+        width: 90px;
+    }
+    .links-footer {
+        width: 100%;
+    }
+    .links-title{
+        margin: 50px 0 22px;
+    }
+    .social-midias {
+        margin: 120px 15px 15px;
+        width: 100%;
+    }
+    .country {
+        font-size: 10px;
+    }
+    .bottom-links {
+        align-items: start;
+    }
+    .bottom-links ul {
+        flex-wrap: wrap;
+    }
+    .bottom-links ul a{
+        font-size: 10px;
+    }
+    .bottom-links span {
+        flex-shrink: 0;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .links-footer {
+        display: block;
+    }
+}
