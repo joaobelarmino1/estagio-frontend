@@ -149,6 +149,150 @@ body {
   justify-content: center;
   align-items: center;
 }
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+body.scroll-disabled {
+  overflow-y: hidden;
+}
+.darken-background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+.darken-background.disabled {
+  display: none;
+}
+header {
+  background-color: #002C4F;
+  height: 5rem;
+  display: flex;
+  z-index: 999;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  font-family: 'Circular Spotify Tx T Black';
+  z-index: 999;
+}
+header nav p {
+  color: white;
+  margin: 0 10px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  color: #ffffff;
+  list-style-type: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+header nav ul li:nth-last-child(-n+3) {
+  color: #97b1cb;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+header nav ul li:hover {
+  color: #00A8A9;
+}
+header nav .burguer {
+  display: none;
+  cursor: pointer;
+}
+header nav .burguer div {
+  width: 20px;
+  height: 4px;
+  background-color: white;
+  margin-top: 4px;
+}
+li.logo {
+  position: absolute;
+  bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  header nav img {
+    width: 100px;
+  }
+  li.logo {
+    display: none;
+  }
+  .horizontal {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    height: 3rem;
+  }
+  nav img {
+    width: 80px;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 97vh;
+    top: 3vh;
+    flex-direction: column;
+    background-color: #002C4F;
+    margin-top: 0;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-left: 1rem;
+  }
+  .nav-links p.vertical {
+    display: none;
+  }
+  .nav-links p.horizontal {
+    margin-bottom: 2.5rem;
+  }
+  .nav-links li {
+    opacity: 1;
+    margin-bottom: 2rem;
+    font-size: 32px;
+  }
+  .nav-links li:nth-last-child(-n+3) {
+    font-size: 24px;
+  }
+  .burguer {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    height: 4rem;
+  }
+  .nav-links {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+  }
+  .nav-links li:first-child {
+    margin-top: 1rem;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 .vantagens {
   margin: 4rem auto;
   text-align: center;
