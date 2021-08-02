@@ -149,6 +149,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+body {
+  overflow-x: hidden;
+  position: relative;
+}
 body.scroll-disabled {
   overflow-y: hidden;
 }
@@ -157,7 +161,7 @@ body.scroll-disabled {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  z-index: 998;
 }
 .darken-background.disabled {
   display: none;
@@ -166,7 +170,7 @@ header {
   background-color: #002C4F;
   height: 5rem;
   display: flex;
-  z-index: 150000000;
+  z-index: 999;
 }
 header nav {
   width: 100%;
@@ -175,6 +179,7 @@ header nav {
   align-items: center;
   padding: 0 4rem;
   font-family: 'Circular Spotify Tx T Black';
+  z-index: 999;
 }
 header nav p {
   color: white;
@@ -212,7 +217,7 @@ li.logo {
   bottom: 16px;
 }
 @media screen and (min-width: 1024px) {
-  nav img {
+  header nav img {
     width: 100px;
   }
   li.logo {
@@ -235,8 +240,8 @@ li.logo {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 96vh;
-    top: 4vh;
+    height: 97vh;
+    top: 3vh;
     flex-direction: column;
     background-color: #002C4F;
     margin-top: 0;
@@ -263,6 +268,19 @@ li.logo {
     display: block !important;
   }
 }
+@media screen and (max-width: 375px) {
+  header {
+    height: 4rem;
+  }
+  .nav-links {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+  }
+  .nav-links li:first-child {
+    margin-top: 1rem;
+  }
+}
 .nav-active {
   transform: translateX(0%);
 }
@@ -274,6 +292,108 @@ li.logo {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+.banner {
+  background-color: #BF0032;
+  height: 350px;
+  padding: 3%;
+}
+.frase {
+  font-size: 2rem;
+  text-transform: bold;
+  color: #F7F7F7;
+  font-family: 'Circular Spotify Tx T Black';
+}
+.subfrase {
+  font-size: 20px;
+  color: #F7F7F7;
+  font-family: "roboto";
+  margin-top: 1%;
+}
+.termo {
+  font-size: 15px;
+  color: #F7F7F7;
+  margin-top: 2%;
+  font-family: "roboto";
+}
+.termo1 {
+  color: #101820;
+}
+.botao-banner {
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  background-color: #101820;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  margin-top: 3%;
+  border: none;
+  font-family: 'Circular Spotify Tx T Black';
+}
+.botao-banner2 {
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  margin-top: 2%;
+  border: transparent;
+  font-family: 'Circular Spotify Tx T Black';
+}
+.botao-banner2:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  background-color: #101820;
+  text-transform: bold;
+}
+.botao-banner:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+@media screen and (min-width: 610px) {
+  .banner {
+    background-color: #BF0032;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner {
+    background-color: #BF0032;
+  }
+  .frase,
+  .subfrase {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .botao-banner {
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  .botao-banner2 {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-width: 425px) {
+  .banner {
+    background-color: #BF0032;
+  }
+}
+@media screen and (max-width: 425px) {
+  .banner {
+    background-color: #BF0032;
+  }
+  .frase,
+  .subfrase {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .botao-banner {
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  .botao-banner2 {
+    margin-left: 20%;
+  }
 }
 .vantagens {
   margin: 4rem auto;
