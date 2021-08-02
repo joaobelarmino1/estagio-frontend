@@ -409,6 +409,7 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: start;
+  align-items: center;
   background-color: #FFF;
   height: 1.75rem;
   padding: 0.3rem 0 0.3rem 0.6rem;
@@ -523,6 +524,11 @@ body {
 .plans__terms-box {
   box-sizing: border-box;
   margin-top: 0.7rem;
+}
+@media only screen and (min-width: 1200px) {
+  .plans__terms-box {
+    margin: 0.4rem;
+  }
 }
 .plans__terms {
   font-family: Roboto, sans-serif;
