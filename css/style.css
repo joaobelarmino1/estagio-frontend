@@ -178,12 +178,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1101px) {
   .vantagens .vantagens__itens {
     width: 1100px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .vantagens .vantagens__itens {
     width: 90%;
     justify-content: space-around;
