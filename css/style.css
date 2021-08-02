@@ -1,3 +1,7 @@
+@font-face {
+  font-family: spotify;
+  src: url("../fonts/CircularSpotifyTxT-Black.ttf");
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -273,6 +277,7 @@ body {
   margin: 0 auto;
 }
 .vantagens .vantagens__item-img img {
+  z-index: -10;
   width: 100%;
 }
 @media screen and (max-width: 500px) {
