@@ -347,3 +347,22 @@ template {
 [hidden] {
   display: none;
 }
+
+*, html, body{
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+}
+
+body{
+  background-color: @branco-padrao;
+  color: @preto-padrao;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
