@@ -274,6 +274,7 @@ body {
   margin: 0 auto;
 }
 .vantagens .vantagens__item-img img {
+  z-index: -10;
   width: 100%;
 }
 @media screen and (max-width: 500px) {
@@ -326,14 +327,14 @@ footer a:hover {
 .links-title {
   font-weight: 900;
   color: #97b1cb;
-  font-size: 11px;
+  font-size: 12px;
   margin: 20px 0;
   letter-spacing: .08em;
 }
 .links-footer ul li a {
   display: block;
   padding: 3px 0 15px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
