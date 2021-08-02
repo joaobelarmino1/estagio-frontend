@@ -1,0 +1,129 @@
+.banner {
+    background-color: @cor-destaque;
+    height: 350px;
+    padding: 3%;
+  
+}
+
+.frase {
+    font-size: 2rem;
+    text-transform: bold;
+    color: @branco-padrao;
+    font-family: @spotify;
+}
+
+.subfrase {
+    font-size: 20px;
+    color: @branco-padrao;
+    font-family: "roboto";
+    margin-top: 1%;
+}
+
+.termo {
+    font-size: 15px;
+    color: @branco-padrao;
+    margin-top: 2%;
+    font-family: "roboto";
+}
+
+.termo1 {
+    color: @preto-padrao;
+}
+
+
+
+.botao-banner {
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    background-color: @preto-padrao;
+    text-transform: uppercase;
+    color: @branco-padrao;
+    margin-top: 3%;
+    border: none;
+    font-family: @spotify;
+}
+
+.botao-banner2 {
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: @branco-padrao;
+    margin-top: 2%;
+    border: transparent;
+    font-family: @spotify;
+}
+
+.botao-banner2:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+    background-color: @preto-padrao;
+    text-transform: bold;
+
+}
+
+.botao-banner:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+@media screen and (min-width: 610px){
+   .banner{
+     background-color: @cor-destaque;
+   }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        background-color: @cor-destaque;
+       
+    }
+    
+    .frase, .subfrase {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .botao-banner {
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+
+    .botao-banner2{
+        margin-left: 20%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 425px) {
+    .banner {
+        background-color: @cor-destaque;
+        ;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner {
+        background-color: @cor-destaque;
+       
+    }
+    
+    .frase, .subfrase {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .botao-banner {
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+
+    .botao-banner2{
+        margin-left: 20%;
+    }
+
+}
