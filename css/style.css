@@ -104,26 +104,6 @@ nav,
 section {
   display: block;
 }
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
 body {
   line-height: 1;
 }
@@ -331,6 +311,9 @@ footer a:hover {
   padding: 0 15px;
   width: 15%;
 }
+.logo-spotify {
+  width: 130px;
+}
 .links-footer {
   width: 50%;
   display: flex;
@@ -342,9 +325,10 @@ footer a:hover {
 }
 .links-title {
   font-weight: 900;
-  color: #7597ba;
-  font-size: 0.7em;
+  color: #97b1cb;
+  font-size: 11px;
   margin: 20px 0;
+  letter-spacing: .08em;
 }
 .links-footer ul li a {
   display: block;
@@ -365,9 +349,9 @@ footer a:hover {
   margin-right: 15px;
 }
 .social-midias a {
-  width: 45px;
-  height: 45px;
-  background-color: #7597ba;
+  width: 50px;
+  height: 50px;
+  background-color: #97b1cb;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -381,7 +365,7 @@ footer a:hover {
   font-size: 12px;
 }
 .country a {
-  color: #7597ba;
+  color: #97b1cb;
 }
 .country a:hover {
   color: #00A8A9;
@@ -401,7 +385,7 @@ footer a:hover {
   margin-right: 24px;
   padding: 1em 0;
   font-size: 12px;
-  color: #7597ba;
+  color: #97b1cb;
 }
 .bottom-links li a:hover {
   color: #00A8A9;
@@ -410,7 +394,7 @@ footer a:hover {
   margin: 0 15px 0 auto;
   padding: 1em 0;
   font-size: 12px;
-  color: #efefef;
+  color: #97b1cb;
 }
 @media screen and (min-width: 1201px) {
   .logo {
@@ -433,8 +417,14 @@ footer a:hover {
     display: block;
     width: 100%;
   }
+  .logo-spotify {
+    width: 90px;
+  }
   .links-footer {
     width: 100%;
+  }
+  .links-title {
+    margin: 50px 0 22px;
   }
   .social-midias {
     margin: 120px 15px 15px;
@@ -457,7 +447,7 @@ footer a:hover {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 700px) {
   .links-footer {
     display: block;
   }
