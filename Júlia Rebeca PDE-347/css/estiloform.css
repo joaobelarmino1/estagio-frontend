@@ -17,6 +17,7 @@ body{
 header {
     text-align: center;
     padding: 30px 0;
+    z-index: 1;
 }
 
 h1 {
@@ -39,8 +40,8 @@ h1 {
     transition: 0.3s transform;
     cursor: pointer;
     display: flex;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .face {
@@ -211,6 +212,7 @@ fieldset legend {
     margin-top: 18px;
     line-height: 24px;
     cursor: pointer;
+    transition: 0.3s transform;
 }
 
 .botao-enviar:hover {
