@@ -235,7 +235,7 @@ li.logo {
   header {
     height: 3rem;
   }
-  nav img {
+  .header img {
     width: 80px;
   }
   .nav-links {
