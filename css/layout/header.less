@@ -16,7 +16,7 @@ body.scroll-disabled{
 
 
 header {
-    background-color: black;
+    background-color: @azul-escuro;
     height: 5rem;
     display: flex;
     z-index: 150000000;
@@ -45,13 +45,13 @@ header {
                 cursor: pointer;
 
                 &:nth-last-child(-n+3){
-                    color: rgb(214, 214, 214);
+                    color: lighten(@preto-padrao, 60);
                     font-family: sans-serif;
                     font-weight: 600;
                 }
 
                 &:hover {
-                    color: rgb(21, 199, 21);
+                    color: @verde-claro;
                 }
 
         
@@ -111,7 +111,7 @@ li.logo{
         height: 96vh;
         top: 4vh;
         flex-direction: column;
-        background-color: black;
+        background-color: @azul-escuro;
         margin-top: 0;
         width: 40%;
         transform: translateX(100%);
