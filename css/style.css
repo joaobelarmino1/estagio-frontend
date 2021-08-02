@@ -180,6 +180,8 @@ header nav {
   padding: 0 4rem;
   font-family: 'Circular Spotify Tx T Black';
   z-index: 999;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 header nav p {
   color: white;
@@ -227,6 +229,11 @@ li.logo {
     display: none;
   }
 }
+@media screen and (max-width: 1200px) {
+  header nav {
+    max-width: 970px;
+  }
+}
 @media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
@@ -234,7 +241,7 @@ li.logo {
   header {
     height: 3rem;
   }
-  .header img {
+  header img {
     width: 80px;
   }
   .nav-links {
@@ -266,6 +273,11 @@ li.logo {
   }
   .burguer {
     display: block !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  header nav {
+    max-width: 750px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -717,6 +729,10 @@ li.logo {
   background-size: cover;
   height: 280px;
   padding: 3%;
+}
+.banner .content__banner {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 .frase {
   font-size: 3rem;
