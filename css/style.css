@@ -280,6 +280,11 @@ li.logo {
     max-width: 750px;
   }
 }
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 0 30px;
+  }
+}
 @media screen and (max-width: 600px) {
   header {
     height: 4rem;
