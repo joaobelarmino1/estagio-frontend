@@ -475,7 +475,6 @@ template {
   background-color: #18191b;
   border-radius: 2rem;
   letter-spacing: 0.1rem;
-  transition: transform 0.2s;
 }
 @media only screen and (min-width: 1200px) {
   .plans__button {
@@ -483,7 +482,9 @@ template {
   }
 }
 .plans__button:hover {
-  transform: scale(1.05);
+  transition: background-color 0.5s ease, transform 0.5s;
+  background-color: #BF0032;
+  transform: scale(1.08);
 }
 .plans__terms-box {
   box-sizing: border-box;
