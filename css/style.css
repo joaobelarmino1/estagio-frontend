@@ -173,14 +173,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   .vantagens .vantagens__itens {
     width: 1100px;
   }
 }
 @media screen and (max-width: 1024px) {
   .vantagens .vantagens__itens {
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
     flex-wrap: wrap;
   }
@@ -197,6 +197,7 @@ body {
 }
 .vantagens .vantagens__itens .vantagens__item .vantagens__item__conteudo {
   width: 100%;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 1024px) {
   .vantagens .vantagens__itens .vantagens__item .vantagens__item__conteudo {
@@ -206,6 +207,8 @@ body {
 }
 .vantagens .vantagens__itens .vantagens__item .vantagens__item__conteudo-titulo {
   max-width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   font-family: 'Circular Spotify Tx T Black';
 }
 @media screen and (max-width: 768px) {
