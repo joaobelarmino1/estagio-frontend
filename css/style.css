@@ -709,7 +709,7 @@ footer a:hover {
   color: #97b1cb;
   font-size: 12px;
   margin: 20px 0;
-  letter-spacing: 0.08em;
+  letter-spacing: .08em;
 }
 .links-footer ul li a {
   display: block;
