@@ -31,8 +31,10 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 0 4rem;
-        font-family: @spotify;
+        font-family: spotify;
         z-index: 999;
+        margin: 0 auto;
+        max-width: 1170px;
 
         p {
             color: white;
@@ -85,7 +87,7 @@ li.logo {
 
 @media screen and (min-width: 1024px) {
     header nav img {
-        width: 100px;
+        width: 130px;
     }
 
     li.logo {
@@ -97,6 +99,15 @@ li.logo {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    header {
+        nav {
+            max-width: 970px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     body {
         overflow-x: hidden;
@@ -106,8 +117,8 @@ li.logo {
         height: 3rem;
     }
 
-    .header img {
-        width: 80px;
+    header img {
+        width: 90px;
     }
 
     .nav-links {
@@ -150,7 +161,23 @@ li.logo {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 980px) {
+    header {
+        nav {
+            max-width: 750px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        nav{
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
     header {
         height: 4rem;
     }
@@ -160,7 +187,7 @@ li.logo {
         height: 100vh;
         top: 0;
 
-        li:first-child{
+        li:first-child {
             margin-top: 1rem;
         }
     }
