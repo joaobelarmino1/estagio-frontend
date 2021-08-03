@@ -3,13 +3,16 @@
     background-position: center -100px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 280px;
     padding: 3%;
     .content__banner{
         max-width: 1170px;
         margin: 0 auto
     }
-  
+  @media screen and (min-width: 1800px){
+      background-position: center -350px;
+  }
 }
 
 .frase {
@@ -17,7 +20,7 @@
    
     text-transform: bold;
     color: @branco-padrao;
-    font-family: @spotify;
+    font-family: spotify;
     margin-top: 2%;
     text-shadow: 1px 1px @preto-padrao;
 
@@ -63,7 +66,7 @@
     color: @branco-padrao;
     margin-top: 5%;
     border: none;
-    font-family: @spotify;
+    font-family: spotify;
     transition: all 0.5s;
     cursor: pointer;
     
@@ -73,12 +76,12 @@
     border-radius: 50px;
     height: 40px;
     width: 200px;
-    background-color: transparent;
+    background-color: fade(@preto-padrao, 40);
     text-transform: uppercase;
     color: @branco-padrao;
     margin-top: 2%;
     border: transparent;
-    font-family: @spotify;
+    font-family: spotify;
     margin-left: 10px;
     transition: all 0.5s;
     cursor: pointer;
@@ -86,7 +89,7 @@
 
 .botao-banner2:hover {
     transform: scale(1.1);
-    opacity: 0.5;
+    opacity: 1;
     background-color: @preto-padrao;
     text-transform: bold;
 
@@ -101,6 +104,9 @@
     .banner {
         background-color: @preto-padrao;
         background-image: none;
+    }
+    .termo{
+        background-color: transparent;
     }
 }
 
