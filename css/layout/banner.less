@@ -1,22 +1,39 @@
 .banner {
-    background-color: @cor-destaque;
-    height: 350px;
+    background: url(https://images.pexels.com/photos/6686277/pexels-photo-6686277.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 280px;
     padding: 3%;
-  
+    .content__banner{
+        max-width: 1170px;
+        margin: 0 auto
+    }
+  @media screen and (min-width: 1800px){
+      background-position: center -350px;
+  }
 }
 
 .frase {
-    font-size: 2rem;
+    font-size: 3rem;
+   
     text-transform: bold;
     color: @branco-padrao;
-    font-family: @spotify;
+    font-family: spotify;
+    margin-top: 2%;
+    text-shadow: 1px 1px @preto-padrao;
+
 }
 
 .subfrase {
     font-size: 20px;
     color: @branco-padrao;
     font-family: "roboto";
-    margin-top: 1%;
+    margin-top: 2%;
+    text-shadow: 1px 1px @preto-padrao;
+    font-weight: 500;
+
 }
 
 .termo {
@@ -24,11 +41,19 @@
     color: @branco-padrao;
     margin-top: 2%;
     font-family: "roboto";
+    font-weight: 500;
+    background-color: fade(@azul-escuro, 70);
+    padding: 7px;
+    width: 780px;
+    border-radius: 1em;
+    max-width: 65%;
+
 }
 
 .termo1 {
-    color: @preto-padrao;
+    color: @branco-padrao;
 }
+
 
 
 
@@ -36,29 +61,35 @@
     border-radius: 50px;
     height: 40px;
     width: 200px;
-    background-color: @preto-padrao;
+    background-color: @cor-destaque;
     text-transform: uppercase;
     color: @branco-padrao;
-    margin-top: 3%;
+    margin-top: 5%;
     border: none;
-    font-family: @spotify;
+    font-family: spotify;
+    transition: all 0.5s;
+    cursor: pointer;
+    
 }
 
 .botao-banner2 {
     border-radius: 50px;
     height: 40px;
     width: 200px;
-    background-color: transparent;
+    background-color: fade(@preto-padrao, 40);
     text-transform: uppercase;
     color: @branco-padrao;
     margin-top: 2%;
     border: transparent;
-    font-family: @spotify;
+    font-family: spotify;
+    margin-left: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .botao-banner2:hover {
     transform: scale(1.1);
-    opacity: 0.5;
+    opacity: 1;
     background-color: @preto-padrao;
     text-transform: bold;
 
@@ -69,49 +100,26 @@
     opacity: 0.9;
 }
 
-@media screen and (min-width: 610px){
-   .banner{
-     background-color: @cor-destaque;
-   }
+@media screen and (max-width: 767px) {
+    .banner {
+        background-color: @preto-padrao;
+        background-image: none;
+    }
+    .termo{
+        background-color: transparent;
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px){
     .banner {
-        background-color: @cor-destaque;
-       
-    }
-    
-    .frase, .subfrase {
-        text-align: center;
-        margin-top: 5%;
-    }
-
-    .botao-banner {
-        margin-left: 20%;
-        margin-top: 8%;
-    }
-
-    .botao-banner2{
-        margin-left: 20%;
-    }
-
-}
-
-
-
-@media screen and (min-width: 425px) {
-    .banner {
-        background-color: @cor-destaque;
-        ;
+        height: 460px;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .banner {
-        background-color: @cor-destaque;
-       
+    .termo{
+        margin: 0 auto;
     }
-    
     .frase, .subfrase {
         text-align: center;
         margin-top: 5%;
@@ -127,3 +135,55 @@
     }
 
 }
+
+@media screen and (max-width: 375px) {
+    .banner {
+        height: 340px;
+       
+    }
+
+    
+    .frase, .subfrase {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .termo {
+        font-size: 10px;
+        max-width: 80%;
+        line-height: 12px;
+        margin: 0 auto;
+    }
+    .botao-banner {
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+
+    .botao-banner2{
+        margin-left: 20%;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 325px) {
+    .banner {
+        height: 360px;
+        
+    }
+
+    .termo {
+        font-size: 10px;
+        max-width: 80%;
+        line-height: 12px;
+      
+    }
+}
+
+
+
+
+

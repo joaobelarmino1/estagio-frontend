@@ -137,6 +137,9 @@ table {
     font-size: 12px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #F7F7F7;
   color: #101820;
@@ -178,8 +181,10 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
-  font-family: 'Circular Spotify Tx T Black';
+  font-family: spotify;
   z-index: 999;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 header nav p {
   color: white;
@@ -218,13 +223,18 @@ li.logo {
 }
 @media screen and (min-width: 1024px) {
   header nav img {
-    width: 100px;
+    width: 130px;
   }
   li.logo {
     display: none;
   }
   .horizontal {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header nav {
+    max-width: 970px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -234,8 +244,8 @@ li.logo {
   header {
     height: 3rem;
   }
-  nav img {
-    width: 80px;
+  header img {
+    width: 90px;
   }
   .nav-links {
     position: absolute;
@@ -268,7 +278,17 @@ li.logo {
     display: block !important;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 980px) {
+  header nav {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 600px) {
   header {
     height: 4rem;
   }
@@ -298,7 +318,7 @@ li.logo {
   text-align: center;
 }
 .vantagens .vantagens__titulo {
-  font-family: 'Circular Spotify Tx T Black';
+  font-family: spotify;
   font-size: 3rem;
 }
 @media screen and (max-width: 425px) {
@@ -358,7 +378,7 @@ li.logo {
   max-width: 100%;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  font-family: 'Circular Spotify Tx T Black';
+  font-family: spotify;
 }
 @media screen and (max-width: 768px) {
   .vantagens .vantagens__itens .vantagens__item .vantagens__item__conteudo-titulo {
@@ -533,6 +553,11 @@ li.logo {
     padding: 0 40.2rem;
   }
 }
+@media only screen and (max-width: 1199px) {
+  #plans__box:last-child {
+    margin-bottom: 3.75rem;
+  }
+}
 .plans__card {
   box-sizing: border-box;
   display: flex;
@@ -547,6 +572,7 @@ li.logo {
 }
 @media only screen and (min-width: 1200px) {
   .plans__card {
+    margin: 0.8rem 0.5rem 6rem 0.5rem;
     height: 890px;
     max-width: 280px;
   }
@@ -643,7 +669,8 @@ li.logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 1.4;
+  line-height: 1.3;
+
 }
 @media only screen and (min-width: 1200px) {
   .plans__benefits-box {
@@ -712,62 +739,91 @@ li.logo {
   font-weight: 300;
   font-size: 0.78rem;
   color: #222326;
-  line-height: 1.32;
+  line-height: 1.4;
+
 }
 .plans__terms a {
   color: #222326;
 }
 .banner {
-  background-color: #BF0032;
-  height: 350px;
+  background: url(https://images.pexels.com/photos/6686277/pexels-photo-6686277.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 280px;
   padding: 3%;
 }
+.banner .content__banner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1800px) {
+  .banner {
+    background-position: center -350px;
+  }
+}
 .frase {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: bold;
   color: #F7F7F7;
-  font-family: 'Circular Spotify Tx T Black';
+  font-family: spotify;
+  margin-top: 2%;
+  text-shadow: 1px 1px #101820;
 }
 .subfrase {
   font-size: 20px;
   color: #F7F7F7;
   font-family: "roboto";
-  margin-top: 1%;
+  margin-top: 2%;
+  text-shadow: 1px 1px #101820;
+  font-weight: 500;
 }
 .termo {
   font-size: 15px;
   color: #F7F7F7;
   margin-top: 2%;
   font-family: "roboto";
+  font-weight: 500;
+  background-color: rgba(0, 44, 79, 0.7);
+  padding: 7px;
+  width: 780px;
+  border-radius: 1em;
+  max-width: 65%;
 }
 .termo1 {
-  color: #101820;
+  color: #F7F7F7;
 }
 .botao-banner {
   border-radius: 50px;
   height: 40px;
   width: 200px;
-  background-color: #101820;
+  background-color: #BF0032;
   text-transform: uppercase;
   color: #F7F7F7;
-  margin-top: 3%;
+  margin-top: 5%;
   border: none;
-  font-family: 'Circular Spotify Tx T Black';
+  font-family: spotify;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .botao-banner2 {
   border-radius: 50px;
   height: 40px;
   width: 200px;
-  background-color: transparent;
+  background-color: rgba(16, 24, 32, 0.4);
   text-transform: uppercase;
   color: #F7F7F7;
   margin-top: 2%;
   border: transparent;
-  font-family: 'Circular Spotify Tx T Black';
+  font-family: spotify;
+  margin-left: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .botao-banner2:hover {
   transform: scale(1.1);
-  opacity: 0.5;
+  opacity: 1;
   background-color: #101820;
   text-transform: bold;
 }
@@ -775,19 +831,51 @@ li.logo {
   transform: scale(1.1);
   opacity: 0.9;
 }
-@media screen and (min-width: 610px) {
+@media screen and (max-width: 767px) {
   .banner {
-    background-color: #BF0032;
+    background-color: #101820;
+    background-image: none;
+  }
+  .termo {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 440px) {
+  .banner {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .termo {
+    margin: 0 auto;
+  }
+  .frase,
+  .subfrase {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .botao-banner {
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  .botao-banner2 {
+    margin-left: 20%;
   }
 }
 @media screen and (max-width: 375px) {
   .banner {
-    background-color: #BF0032;
+    height: 340px;
   }
   .frase,
   .subfrase {
     text-align: center;
     margin-top: 5%;
+  }
+  .termo {
+    font-size: 10px;
+    max-width: 80%;
+    line-height: 12px;
+    margin: 0 auto;
   }
   .botao-banner {
     margin-left: 20%;
@@ -797,26 +885,14 @@ li.logo {
     margin-left: 20%;
   }
 }
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 325px) {
   .banner {
-    background-color: #BF0032;
+    height: 360px;
   }
-}
-@media screen and (max-width: 425px) {
-  .banner {
-    background-color: #BF0032;
-  }
-  .frase,
-  .subfrase {
-    text-align: center;
-    margin-top: 5%;
-  }
-  .botao-banner {
-    margin-left: 20%;
-    margin-top: 8%;
-  }
-  .botao-banner2 {
-    margin-left: 20%;
+  .termo {
+    font-size: 10px;
+    max-width: 80%;
+    line-height: 12px;
   }
 }
 footer {
